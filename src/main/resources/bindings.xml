@@ -1,0 +1,20 @@
+<!--
+C:\dev\wrkspc\adempiere\svea-admin-client>wsdl2java.bat -frontend jaxws21 
+-d src\main\java
+-b src\main\resources\bindings.xml
+-client https://partnerweb.sveaekonomi.se/WebPayAdminService/AdminService.svc?wsdl
+
+C:\dev\wrkspc\adempiere\se.cyberphoto.svea>wsdl2java.bat -frontend jaxws21 
+-d src\main\java
+-b src\main\resources\bindings.xml -autoNameResolution 
+-client https://webservices.sveaekonomi.se/webpay/sveawebpay.asmx?wsdl
+
+
+-->
+
+<jaxb:bindings version="2.1" 
+xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" 
+xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
+   <jaxb:globalBindings generateElementProperty="false"/> 
+</jaxb:bindings>
