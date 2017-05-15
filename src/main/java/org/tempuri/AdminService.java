@@ -24,14 +24,14 @@ public class AdminService extends Service {
     public final static QName WcfAdminSoapService = new QName("http://tempuri.org/", "WcfAdminSoapService");
     public final static QName AdminSoapService = new QName("http://tempuri.org/", "AdminSoapService");
     static {
-        URL url = AdminService.class.getResource("src/main/resources/AdminService.svc.wsdl");
+        URL url = AdminService.class.getResource("AdminService.svc.wsdl");
         if (url == null) {
-            url = AdminService.class.getClassLoader().getResource("src/main/resources/AdminService.svc.wsdl");
+            url = AdminService.class.getClassLoader().getResource("AdminService.svc.wsdl");
         } 
         if (url == null) {
             java.util.logging.Logger.getLogger(AdminService.class.getName())
                 .log(java.util.logging.Level.INFO, 
-                     "Can not initialize the default wsdl from {0}", "src/main/resources/AdminService.svc.wsdl");
+                     "Can not initialize the default wsdl from {0}", "AdminService.svc.wsdl");
         }       
         WSDL_LOCATION = url;
     }
