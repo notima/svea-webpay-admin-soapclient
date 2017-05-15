@@ -17,4 +17,29 @@ xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
 xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" 
 xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
    <jaxb:globalBindings generateElementProperty="false"/> 
+   
+   <jaxb:bindings schemaLocation="https://partnerweb.sveaekonomi.se/WebPayAdminService/AdminService.svc?xsd=xsd7">
+   	<jaxb:bindings node="//xs:element[@name='TextMatchType']">
+   		<jaxb:factoryMethod name="SearchOrder"/>
+   	</jaxb:bindings>
+   </jaxb:bindings>
+   
+   <jaxb:bindings schemaLocation="https://partnerweb.sveaekonomi.se/WebPayAdminService/AdminService.svc?xsd=xsd8">
+   	<jaxb:bindings node="//xs:element[@name='TextMatchType']">
+   		<jaxb:factoryMethod name="SearchInvoice"/>
+   	</jaxb:bindings>
+   </jaxb:bindings>
+   
+   <jaxb:bindings schemaLocation="https://partnerweb.sveaekonomi.se/WebPayAdminService/AdminService.svc?xsd=xsd9">
+   	<jaxb:bindings node="//xs:element[@name='TextMatchType']">
+   		<jaxb:factoryMethod name="SearchPaymentPlan"/>
+   	</jaxb:bindings>
+   </jaxb:bindings>
+
+   <jaxb:bindings schemaLocation="https://partnerweb.sveaekonomi.se/WebPayAdminService/AdminService.svc?xsd=xsd14">
+   	<jaxb:bindings node="//xs:element[@name='TextMatchType']">
+   		<jaxb:factoryMethod name="SearchAccountCredit"/>
+   	</jaxb:bindings>
+   </jaxb:bindings>
+   
 </jaxb:bindings>
