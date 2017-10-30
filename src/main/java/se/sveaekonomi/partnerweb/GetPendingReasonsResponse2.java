@@ -4,23 +4,22 @@ package se.sveaekonomi.partnerweb;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for anonymous complex type.
+ * <p>Java class for GetPendingReasonsResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType&gt;
+ * &lt;complexType name="GetPendingReasonsResponse"&gt;
  *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *     &lt;extension base="{http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service}BasicResponse"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="GetPendingReasonsResult" type="{http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses}GetPendingReasonsResponse" minOccurs="0"/&gt;
+ *         &lt;element name="PendingReasons" type="{http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service}ArrayOfPendingReason" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
+ *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
@@ -28,37 +27,38 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "getPendingReasonsResult"
+@XmlType(name = "GetPendingReasonsResponse", namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", propOrder = {
+    "pendingReasons"
 })
-@XmlRootElement(name = "GetPendingReasonsResponse", namespace = "http://tempuri.org/")
-public class GetPendingReasonsResponse2 {
+public class GetPendingReasonsResponse2
+    extends BasicResponse
+{
 
-    @XmlElement(name = "GetPendingReasonsResult", namespace = "http://tempuri.org/", nillable = true)
-    protected GetPendingReasonsResponse getPendingReasonsResult;
+    @XmlElement(name = "PendingReasons", nillable = true)
+    protected ArrayOfPendingReason pendingReasons;
 
     /**
-     * Gets the value of the getPendingReasonsResult property.
+     * Gets the value of the pendingReasons property.
      * 
      * @return
      *     possible object is
-     *     {@link GetPendingReasonsResponse }
+     *     {@link ArrayOfPendingReason }
      *     
      */
-    public GetPendingReasonsResponse getGetPendingReasonsResult() {
-        return getPendingReasonsResult;
+    public ArrayOfPendingReason getPendingReasons() {
+        return pendingReasons;
     }
 
     /**
-     * Sets the value of the getPendingReasonsResult property.
+     * Sets the value of the pendingReasons property.
      * 
      * @param value
      *     allowed object is
-     *     {@link GetPendingReasonsResponse }
+     *     {@link ArrayOfPendingReason }
      *     
      */
-    public void setGetPendingReasonsResult(GetPendingReasonsResponse value) {
-        this.getPendingReasonsResult = value;
+    public void setPendingReasons(ArrayOfPendingReason value) {
+        this.pendingReasons = value;
     }
 
 }

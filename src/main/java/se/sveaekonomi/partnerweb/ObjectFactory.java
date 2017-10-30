@@ -28,39 +28,6 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _ArrayOflong_QNAME = new QName("http://schemas.microsoft.com/2003/10/Serialization/Arrays", "ArrayOflong");
-    private final static QName _ArrayOfstring_QNAME = new QName("http://schemas.microsoft.com/2003/10/Serialization/Arrays", "ArrayOfstring");
-    private final static QName _GetPendingReasonsResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "GetPendingReasonsResponse");
-    private final static QName _SearchAccountCreditsResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "SearchAccountCreditsResponse");
-    private final static QName _GetAccountCreditsResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "GetAccountCreditsResponse");
-    private final static QName _CancelAccountCreditAmountResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "CancelAccountCreditAmountResponse");
-    private final static QName _CancelAccountCreditRowsResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "CancelAccountCreditRowsResponse");
-    private final static QName _GetClientIdResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "GetClientIdResponse");
-    private final static QName _AccountCreditRegressReportResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "AccountCreditRegressReportResponse");
-    private final static QName _AccountingAgreementType25ReportResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "AccountingAgreementType25ReportResponse");
-    private final static QName _AccountCreditDetails_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", "AccountCreditDetails");
-    private final static QName _SearchAccountCreditSorting_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", "SearchAccountCreditSorting");
-    private final static QName _SortAccountCreditProperty_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", "SortAccountCreditProperty");
-    private final static QName _ArrayOfGetAccountCreditInformation_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", "ArrayOfGetAccountCreditInformation");
-    private final static QName _GetAccountCreditInformation_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", "GetAccountCreditInformation");
-    private final static QName _CreateOrderInformation_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", "CreateOrderInformation");
-    private final static QName _CreateAccountCreditDetails_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", "CreateAccountCreditDetails");
-    private final static QName _CreatePaymentPlanDetails_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", "CreatePaymentPlanDetails");
-    private final static QName _CreateOrderResult_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", "CreateOrderResult");
-    private final static QName _SearchPaymentPlan_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.PaymentPlan", "TextMatchType");
-    private final static QName _SearchInvoice_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.Invoice", "TextMatchType");
-    private final static QName _OrderType_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "OrderType");
-    private final static QName _CustomerIdentity_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "CustomerIdentity");
-    private final static QName _CompanyIdentity_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "CompanyIdentity");
-    private final static QName _CustomerType_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "CustomerType");
-    private final static QName _IndividualIdentity_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "IndividualIdentity");
-    private final static QName _Address_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "Address");
-    private final static QName _OrderRow_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "OrderRow");
-    private final static QName _ArrayOfOrderStatus_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "ArrayOfOrderStatus");
-    private final static QName _OrderStatus_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "OrderStatus");
-    private final static QName _ArrayOfOrderRow_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "ArrayOfOrderRow");
-    private final static QName _ArrayOfOrderRowReferenceItem_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "ArrayOfOrderRowReferenceItem");
-    private final static QName _OrderRowReferenceItem_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "OrderRowReferenceItem");
     private final static QName _AnyType_QNAME = new QName("http://schemas.microsoft.com/2003/10/Serialization/", "anyType");
     private final static QName _AnyURI_QNAME = new QName("http://schemas.microsoft.com/2003/10/Serialization/", "anyURI");
     private final static QName _Base64Binary_QNAME = new QName("http://schemas.microsoft.com/2003/10/Serialization/", "base64Binary");
@@ -82,8 +49,12 @@ public class ObjectFactory {
     private final static QName _Char_QNAME = new QName("http://schemas.microsoft.com/2003/10/Serialization/", "char");
     private final static QName _Duration_QNAME = new QName("http://schemas.microsoft.com/2003/10/Serialization/", "duration");
     private final static QName _Guid_QNAME = new QName("http://schemas.microsoft.com/2003/10/Serialization/", "guid");
-    private final static QName _SearchAccountCredit_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.AccountCredit", "TextMatchType");
+    private final static QName _InvoiceDistributionType_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice.DeliverOrder", "InvoiceDistributionType");
     private final static QName _AddressSource_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Enums", "AddressSource");
+    private final static QName _CreateOrderInformation_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", "CreateOrderInformation");
+    private final static QName _CreateAccountCreditDetails_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", "CreateAccountCreditDetails");
+    private final static QName _CreatePaymentPlanDetails_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", "CreatePaymentPlanDetails");
+    private final static QName _CreateOrderResult_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", "CreateOrderResult");
     private final static QName _GetOrdersRequest_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service", "GetOrdersRequest");
     private final static QName _BasicRequest_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service", "BasicRequest");
     private final static QName _Authentication_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service", "Authentication");
@@ -240,126 +211,43 @@ public class ObjectFactory {
     private final static QName _GetClientIdRequest_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests", "GetClientIdRequest");
     private final static QName _AccountCreditRegressReportRequest_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests", "AccountCreditRegressReportRequest");
     private final static QName _AccountingAgreementType25ReportRequest_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests", "AccountingAgreementType25ReportRequest");
-    private final static QName _InvoiceDistributionType_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice.DeliverOrder", "InvoiceDistributionType");
+    private final static QName _AccountCreditDetails_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", "AccountCreditDetails");
+    private final static QName _SearchAccountCreditSorting_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", "SearchAccountCreditSorting");
+    private final static QName _SortAccountCreditProperty_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", "SortAccountCreditProperty");
+    private final static QName _ArrayOfGetAccountCreditInformation_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", "ArrayOfGetAccountCreditInformation");
+    private final static QName _GetAccountCreditInformation_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", "GetAccountCreditInformation");
     private final static QName _SearchOrder_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.Order", "TextMatchType");
+    private final static QName _SearchInvoice_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.Invoice", "TextMatchType");
+    private final static QName _ArrayOflong_QNAME = new QName("http://schemas.microsoft.com/2003/10/Serialization/Arrays", "ArrayOflong");
+    private final static QName _ArrayOfstring_QNAME = new QName("http://schemas.microsoft.com/2003/10/Serialization/Arrays", "ArrayOfstring");
+    private final static QName _SearchPaymentPlan_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.PaymentPlan", "TextMatchType");
+    private final static QName _OrderType_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "OrderType");
+    private final static QName _CustomerIdentity_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "CustomerIdentity");
+    private final static QName _CompanyIdentity_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "CompanyIdentity");
+    private final static QName _CustomerType_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "CustomerType");
+    private final static QName _IndividualIdentity_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "IndividualIdentity");
+    private final static QName _Address_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "Address");
+    private final static QName _OrderRow_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "OrderRow");
+    private final static QName _ArrayOfOrderStatus_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "ArrayOfOrderStatus");
+    private final static QName _OrderStatus_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "OrderStatus");
+    private final static QName _ArrayOfOrderRow_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "ArrayOfOrderRow");
+    private final static QName _ArrayOfOrderRowReferenceItem_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "ArrayOfOrderRowReferenceItem");
+    private final static QName _OrderRowReferenceItem_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Webservice", "OrderRowReferenceItem");
+    private final static QName _SearchAccountCredit_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.AccountCredit", "TextMatchType");
+    private final static QName _GetPendingReasonsResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "GetPendingReasonsResponse");
+    private final static QName _SearchAccountCreditsResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "SearchAccountCreditsResponse");
+    private final static QName _GetAccountCreditsResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "GetAccountCreditsResponse");
+    private final static QName _CancelAccountCreditAmountResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "CancelAccountCreditAmountResponse");
+    private final static QName _CancelAccountCreditRowsResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "CancelAccountCreditRowsResponse");
+    private final static QName _GetClientIdResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "GetClientIdResponse");
+    private final static QName _AccountCreditRegressReportResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "AccountCreditRegressReportResponse");
+    private final static QName _AccountingAgreementType25ReportResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", "AccountingAgreementType25ReportResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: se.sveaekonomi.partnerweb
      * 
      */
     public ObjectFactory() {
-    }
-
-    /**
-     * Create an instance of {@link ArrayOflong }
-     * 
-     */
-    public ArrayOflong createArrayOflong() {
-        return new ArrayOflong();
-    }
-
-    /**
-     * Create an instance of {@link ArrayOfstring }
-     * 
-     */
-    public ArrayOfstring createArrayOfstring() {
-        return new ArrayOfstring();
-    }
-
-    /**
-     * Create an instance of {@link GetPendingReasonsResponse }
-     * 
-     */
-    public GetPendingReasonsResponse createGetPendingReasonsResponse() {
-        return new GetPendingReasonsResponse();
-    }
-
-    /**
-     * Create an instance of {@link SearchAccountCreditsResponse }
-     * 
-     */
-    public SearchAccountCreditsResponse createSearchAccountCreditsResponse() {
-        return new SearchAccountCreditsResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetAccountCreditsResponse }
-     * 
-     */
-    public GetAccountCreditsResponse createGetAccountCreditsResponse() {
-        return new GetAccountCreditsResponse();
-    }
-
-    /**
-     * Create an instance of {@link CancelAccountCreditAmountResponse }
-     * 
-     */
-    public CancelAccountCreditAmountResponse createCancelAccountCreditAmountResponse() {
-        return new CancelAccountCreditAmountResponse();
-    }
-
-    /**
-     * Create an instance of {@link CancelAccountCreditRowsResponse }
-     * 
-     */
-    public CancelAccountCreditRowsResponse createCancelAccountCreditRowsResponse() {
-        return new CancelAccountCreditRowsResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetClientIdResponse }
-     * 
-     */
-    public GetClientIdResponse createGetClientIdResponse() {
-        return new GetClientIdResponse();
-    }
-
-    /**
-     * Create an instance of {@link AccountCreditRegressReportResponse }
-     * 
-     */
-    public AccountCreditRegressReportResponse createAccountCreditRegressReportResponse() {
-        return new AccountCreditRegressReportResponse();
-    }
-
-    /**
-     * Create an instance of {@link AccountingAgreementType25ReportResponse }
-     * 
-     */
-    public AccountingAgreementType25ReportResponse createAccountingAgreementType25ReportResponse() {
-        return new AccountingAgreementType25ReportResponse();
-    }
-
-    /**
-     * Create an instance of {@link AccountCreditDetails }
-     * 
-     */
-    public AccountCreditDetails createAccountCreditDetails() {
-        return new AccountCreditDetails();
-    }
-
-    /**
-     * Create an instance of {@link SearchAccountCreditSorting }
-     * 
-     */
-    public SearchAccountCreditSorting createSearchAccountCreditSorting() {
-        return new SearchAccountCreditSorting();
-    }
-
-    /**
-     * Create an instance of {@link ArrayOfGetAccountCreditInformation }
-     * 
-     */
-    public ArrayOfGetAccountCreditInformation createArrayOfGetAccountCreditInformation() {
-        return new ArrayOfGetAccountCreditInformation();
-    }
-
-    /**
-     * Create an instance of {@link GetAccountCreditInformation }
-     * 
-     */
-    public GetAccountCreditInformation createGetAccountCreditInformation() {
-        return new GetAccountCreditInformation();
     }
 
     /**
@@ -392,78 +280,6 @@ public class ObjectFactory {
      */
     public CreateOrderResult createCreateOrderResult() {
         return new CreateOrderResult();
-    }
-
-    /**
-     * Create an instance of {@link CustomerIdentity }
-     * 
-     */
-    public CustomerIdentity createCustomerIdentity() {
-        return new CustomerIdentity();
-    }
-
-    /**
-     * Create an instance of {@link CompanyIdentity }
-     * 
-     */
-    public CompanyIdentity createCompanyIdentity() {
-        return new CompanyIdentity();
-    }
-
-    /**
-     * Create an instance of {@link IndividualIdentity }
-     * 
-     */
-    public IndividualIdentity createIndividualIdentity() {
-        return new IndividualIdentity();
-    }
-
-    /**
-     * Create an instance of {@link Address }
-     * 
-     */
-    public Address createAddress() {
-        return new Address();
-    }
-
-    /**
-     * Create an instance of {@link OrderRow }
-     * 
-     */
-    public OrderRow createOrderRow() {
-        return new OrderRow();
-    }
-
-    /**
-     * Create an instance of {@link ArrayOfOrderStatus }
-     * 
-     */
-    public ArrayOfOrderStatus createArrayOfOrderStatus() {
-        return new ArrayOfOrderStatus();
-    }
-
-    /**
-     * Create an instance of {@link ArrayOfOrderRow }
-     * 
-     */
-    public ArrayOfOrderRow createArrayOfOrderRow() {
-        return new ArrayOfOrderRow();
-    }
-
-    /**
-     * Create an instance of {@link ArrayOfOrderRowReferenceItem }
-     * 
-     */
-    public ArrayOfOrderRowReferenceItem createArrayOfOrderRowReferenceItem() {
-        return new ArrayOfOrderRowReferenceItem();
-    }
-
-    /**
-     * Create an instance of {@link OrderRowReferenceItem }
-     * 
-     */
-    public OrderRowReferenceItem createOrderRowReferenceItem() {
-        return new OrderRowReferenceItem();
     }
 
     /**
@@ -1339,6 +1155,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetPendingReasonsResponse }
+     * 
+     */
+    public GetPendingReasonsResponse createGetPendingReasonsResponse() {
+        return new GetPendingReasonsResponse();
+    }
+
+    /**
      * Create an instance of {@link GetPendingReasonsResponse2 }
      * 
      */
@@ -1523,6 +1347,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link SearchAccountCreditsResponse }
+     * 
+     */
+    public SearchAccountCreditsResponse createSearchAccountCreditsResponse() {
+        return new SearchAccountCreditsResponse();
+    }
+
+    /**
      * Create an instance of {@link SearchAccountCreditsResponse2 }
      * 
      */
@@ -1544,6 +1376,14 @@ public class ObjectFactory {
      */
     public GetAccountCreditsRequest createGetAccountCreditsRequest() {
         return new GetAccountCreditsRequest();
+    }
+
+    /**
+     * Create an instance of {@link GetAccountCreditsResponse }
+     * 
+     */
+    public GetAccountCreditsResponse createGetAccountCreditsResponse() {
+        return new GetAccountCreditsResponse();
     }
 
     /**
@@ -1571,6 +1411,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link CancelAccountCreditAmountResponse }
+     * 
+     */
+    public CancelAccountCreditAmountResponse createCancelAccountCreditAmountResponse() {
+        return new CancelAccountCreditAmountResponse();
+    }
+
+    /**
      * Create an instance of {@link CancelAccountCreditAmountResponse2 }
      * 
      */
@@ -1595,6 +1443,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link CancelAccountCreditRowsResponse }
+     * 
+     */
+    public CancelAccountCreditRowsResponse createCancelAccountCreditRowsResponse() {
+        return new CancelAccountCreditRowsResponse();
+    }
+
+    /**
      * Create an instance of {@link CancelAccountCreditRowsResponse2 }
      * 
      */
@@ -1616,6 +1472,14 @@ public class ObjectFactory {
      */
     public GetClientIdRequest createGetClientIdRequest() {
         return new GetClientIdRequest();
+    }
+
+    /**
+     * Create an instance of {@link GetClientIdResponse }
+     * 
+     */
+    public GetClientIdResponse createGetClientIdResponse() {
+        return new GetClientIdResponse();
     }
 
     /**
@@ -1651,6 +1515,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link AccountCreditRegressReportResponse }
+     * 
+     */
+    public AccountCreditRegressReportResponse createAccountCreditRegressReportResponse() {
+        return new AccountCreditRegressReportResponse();
+    }
+
+    /**
      * Create an instance of {@link GenerateAccountingAgreementType25Report }
      * 
      */
@@ -1672,6 +1544,14 @@ public class ObjectFactory {
      */
     public GenerateAccountingAgreementType25ReportResponse createGenerateAccountingAgreementType25ReportResponse() {
         return new GenerateAccountingAgreementType25ReportResponse();
+    }
+
+    /**
+     * Create an instance of {@link AccountingAgreementType25ReportResponse }
+     * 
+     */
+    public AccountingAgreementType25ReportResponse createAccountingAgreementType25ReportResponse() {
+        return new AccountingAgreementType25ReportResponse();
     }
 
     /**
@@ -2291,300 +2171,123 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOflong }{@code >}}
+     * Create an instance of {@link AccountCreditDetails }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", name = "ArrayOflong")
-    public JAXBElement<ArrayOflong> createArrayOflong(ArrayOflong value) {
-        return new JAXBElement<ArrayOflong>(_ArrayOflong_QNAME, ArrayOflong.class, null, value);
+    public AccountCreditDetails createAccountCreditDetails() {
+        return new AccountCreditDetails();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfstring }{@code >}}
+     * Create an instance of {@link SearchAccountCreditSorting }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", name = "ArrayOfstring")
-    public JAXBElement<ArrayOfstring> createArrayOfstring(ArrayOfstring value) {
-        return new JAXBElement<ArrayOfstring>(_ArrayOfstring_QNAME, ArrayOfstring.class, null, value);
+    public SearchAccountCreditSorting createSearchAccountCreditSorting() {
+        return new SearchAccountCreditSorting();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetPendingReasonsResponse }{@code >}}
+     * Create an instance of {@link ArrayOfGetAccountCreditInformation }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "GetPendingReasonsResponse")
-    public JAXBElement<GetPendingReasonsResponse> createGetPendingReasonsResponse(GetPendingReasonsResponse value) {
-        return new JAXBElement<GetPendingReasonsResponse>(_GetPendingReasonsResponse_QNAME, GetPendingReasonsResponse.class, null, value);
+    public ArrayOfGetAccountCreditInformation createArrayOfGetAccountCreditInformation() {
+        return new ArrayOfGetAccountCreditInformation();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SearchAccountCreditsResponse }{@code >}}
+     * Create an instance of {@link GetAccountCreditInformation }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "SearchAccountCreditsResponse")
-    public JAXBElement<SearchAccountCreditsResponse> createSearchAccountCreditsResponse(SearchAccountCreditsResponse value) {
-        return new JAXBElement<SearchAccountCreditsResponse>(_SearchAccountCreditsResponse_QNAME, SearchAccountCreditsResponse.class, null, value);
+    public GetAccountCreditInformation createGetAccountCreditInformation() {
+        return new GetAccountCreditInformation();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetAccountCreditsResponse }{@code >}}
+     * Create an instance of {@link ArrayOflong }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "GetAccountCreditsResponse")
-    public JAXBElement<GetAccountCreditsResponse> createGetAccountCreditsResponse(GetAccountCreditsResponse value) {
-        return new JAXBElement<GetAccountCreditsResponse>(_GetAccountCreditsResponse_QNAME, GetAccountCreditsResponse.class, null, value);
+    public ArrayOflong createArrayOflong() {
+        return new ArrayOflong();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CancelAccountCreditAmountResponse }{@code >}}
+     * Create an instance of {@link ArrayOfstring }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "CancelAccountCreditAmountResponse")
-    public JAXBElement<CancelAccountCreditAmountResponse> createCancelAccountCreditAmountResponse(CancelAccountCreditAmountResponse value) {
-        return new JAXBElement<CancelAccountCreditAmountResponse>(_CancelAccountCreditAmountResponse_QNAME, CancelAccountCreditAmountResponse.class, null, value);
+    public ArrayOfstring createArrayOfstring() {
+        return new ArrayOfstring();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CancelAccountCreditRowsResponse }{@code >}}
+     * Create an instance of {@link CustomerIdentity }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "CancelAccountCreditRowsResponse")
-    public JAXBElement<CancelAccountCreditRowsResponse> createCancelAccountCreditRowsResponse(CancelAccountCreditRowsResponse value) {
-        return new JAXBElement<CancelAccountCreditRowsResponse>(_CancelAccountCreditRowsResponse_QNAME, CancelAccountCreditRowsResponse.class, null, value);
+    public CustomerIdentity createCustomerIdentity() {
+        return new CustomerIdentity();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetClientIdResponse }{@code >}}
+     * Create an instance of {@link CompanyIdentity }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "GetClientIdResponse")
-    public JAXBElement<GetClientIdResponse> createGetClientIdResponse(GetClientIdResponse value) {
-        return new JAXBElement<GetClientIdResponse>(_GetClientIdResponse_QNAME, GetClientIdResponse.class, null, value);
+    public CompanyIdentity createCompanyIdentity() {
+        return new CompanyIdentity();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AccountCreditRegressReportResponse }{@code >}}
+     * Create an instance of {@link IndividualIdentity }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "AccountCreditRegressReportResponse")
-    public JAXBElement<AccountCreditRegressReportResponse> createAccountCreditRegressReportResponse(AccountCreditRegressReportResponse value) {
-        return new JAXBElement<AccountCreditRegressReportResponse>(_AccountCreditRegressReportResponse_QNAME, AccountCreditRegressReportResponse.class, null, value);
+    public IndividualIdentity createIndividualIdentity() {
+        return new IndividualIdentity();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AccountingAgreementType25ReportResponse }{@code >}}
+     * Create an instance of {@link Address }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "AccountingAgreementType25ReportResponse")
-    public JAXBElement<AccountingAgreementType25ReportResponse> createAccountingAgreementType25ReportResponse(AccountingAgreementType25ReportResponse value) {
-        return new JAXBElement<AccountingAgreementType25ReportResponse>(_AccountingAgreementType25ReportResponse_QNAME, AccountingAgreementType25ReportResponse.class, null, value);
+    public Address createAddress() {
+        return new Address();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AccountCreditDetails }{@code >}}
+     * Create an instance of {@link OrderRow }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", name = "AccountCreditDetails")
-    public JAXBElement<AccountCreditDetails> createAccountCreditDetails(AccountCreditDetails value) {
-        return new JAXBElement<AccountCreditDetails>(_AccountCreditDetails_QNAME, AccountCreditDetails.class, null, value);
+    public OrderRow createOrderRow() {
+        return new OrderRow();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SearchAccountCreditSorting }{@code >}}
+     * Create an instance of {@link ArrayOfOrderStatus }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", name = "SearchAccountCreditSorting")
-    public JAXBElement<SearchAccountCreditSorting> createSearchAccountCreditSorting(SearchAccountCreditSorting value) {
-        return new JAXBElement<SearchAccountCreditSorting>(_SearchAccountCreditSorting_QNAME, SearchAccountCreditSorting.class, null, value);
+    public ArrayOfOrderStatus createArrayOfOrderStatus() {
+        return new ArrayOfOrderStatus();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SortAccountCreditProperty }{@code >}}
+     * Create an instance of {@link ArrayOfOrderRow }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", name = "SortAccountCreditProperty")
-    public JAXBElement<SortAccountCreditProperty> createSortAccountCreditProperty(SortAccountCreditProperty value) {
-        return new JAXBElement<SortAccountCreditProperty>(_SortAccountCreditProperty_QNAME, SortAccountCreditProperty.class, null, value);
+    public ArrayOfOrderRow createArrayOfOrderRow() {
+        return new ArrayOfOrderRow();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfGetAccountCreditInformation }{@code >}}
+     * Create an instance of {@link ArrayOfOrderRowReferenceItem }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", name = "ArrayOfGetAccountCreditInformation")
-    public JAXBElement<ArrayOfGetAccountCreditInformation> createArrayOfGetAccountCreditInformation(ArrayOfGetAccountCreditInformation value) {
-        return new JAXBElement<ArrayOfGetAccountCreditInformation>(_ArrayOfGetAccountCreditInformation_QNAME, ArrayOfGetAccountCreditInformation.class, null, value);
+    public ArrayOfOrderRowReferenceItem createArrayOfOrderRowReferenceItem() {
+        return new ArrayOfOrderRowReferenceItem();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetAccountCreditInformation }{@code >}}
+     * Create an instance of {@link OrderRowReferenceItem }
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", name = "GetAccountCreditInformation")
-    public JAXBElement<GetAccountCreditInformation> createGetAccountCreditInformation(GetAccountCreditInformation value) {
-        return new JAXBElement<GetAccountCreditInformation>(_GetAccountCreditInformation_QNAME, GetAccountCreditInformation.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateOrderInformation }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", name = "CreateOrderInformation")
-    public JAXBElement<CreateOrderInformation> createCreateOrderInformation(CreateOrderInformation value) {
-        return new JAXBElement<CreateOrderInformation>(_CreateOrderInformation_QNAME, CreateOrderInformation.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateAccountCreditDetails }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", name = "CreateAccountCreditDetails")
-    public JAXBElement<CreateAccountCreditDetails> createCreateAccountCreditDetails(CreateAccountCreditDetails value) {
-        return new JAXBElement<CreateAccountCreditDetails>(_CreateAccountCreditDetails_QNAME, CreateAccountCreditDetails.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreatePaymentPlanDetails }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", name = "CreatePaymentPlanDetails")
-    public JAXBElement<CreatePaymentPlanDetails> createCreatePaymentPlanDetails(CreatePaymentPlanDetails value) {
-        return new JAXBElement<CreatePaymentPlanDetails>(_CreatePaymentPlanDetails_QNAME, CreatePaymentPlanDetails.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateOrderResult }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", name = "CreateOrderResult")
-    public JAXBElement<CreateOrderResult> createCreateOrderResult(CreateOrderResult value) {
-        return new JAXBElement<CreateOrderResult>(_CreateOrderResult_QNAME, CreateOrderResult.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TextMatchType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.PaymentPlan", name = "TextMatchType")
-    public JAXBElement<TextMatchType> createSearchPaymentPlan(TextMatchType value) {
-        return new JAXBElement<TextMatchType>(_SearchPaymentPlan_QNAME, TextMatchType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TextMatchType2 }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.Invoice", name = "TextMatchType")
-    public JAXBElement<TextMatchType2> createSearchInvoice(TextMatchType2 value) {
-        return new JAXBElement<TextMatchType2>(_SearchInvoice_QNAME, TextMatchType2 .class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link OrderType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "OrderType")
-    public JAXBElement<OrderType> createOrderType(OrderType value) {
-        return new JAXBElement<OrderType>(_OrderType_QNAME, OrderType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CustomerIdentity }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "CustomerIdentity")
-    public JAXBElement<CustomerIdentity> createCustomerIdentity(CustomerIdentity value) {
-        return new JAXBElement<CustomerIdentity>(_CustomerIdentity_QNAME, CustomerIdentity.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CompanyIdentity }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "CompanyIdentity")
-    public JAXBElement<CompanyIdentity> createCompanyIdentity(CompanyIdentity value) {
-        return new JAXBElement<CompanyIdentity>(_CompanyIdentity_QNAME, CompanyIdentity.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CustomerType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "CustomerType")
-    public JAXBElement<CustomerType> createCustomerType(CustomerType value) {
-        return new JAXBElement<CustomerType>(_CustomerType_QNAME, CustomerType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link IndividualIdentity }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "IndividualIdentity")
-    public JAXBElement<IndividualIdentity> createIndividualIdentity(IndividualIdentity value) {
-        return new JAXBElement<IndividualIdentity>(_IndividualIdentity_QNAME, IndividualIdentity.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Address }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "Address")
-    public JAXBElement<Address> createAddress(Address value) {
-        return new JAXBElement<Address>(_Address_QNAME, Address.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link OrderRow }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "OrderRow")
-    public JAXBElement<OrderRow> createOrderRow(OrderRow value) {
-        return new JAXBElement<OrderRow>(_OrderRow_QNAME, OrderRow.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfOrderStatus }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "ArrayOfOrderStatus")
-    public JAXBElement<ArrayOfOrderStatus> createArrayOfOrderStatus(ArrayOfOrderStatus value) {
-        return new JAXBElement<ArrayOfOrderStatus>(_ArrayOfOrderStatus_QNAME, ArrayOfOrderStatus.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link OrderStatus }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "OrderStatus")
-    public JAXBElement<OrderStatus> createOrderStatus(OrderStatus value) {
-        return new JAXBElement<OrderStatus>(_OrderStatus_QNAME, OrderStatus.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfOrderRow }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "ArrayOfOrderRow")
-    public JAXBElement<ArrayOfOrderRow> createArrayOfOrderRow(ArrayOfOrderRow value) {
-        return new JAXBElement<ArrayOfOrderRow>(_ArrayOfOrderRow_QNAME, ArrayOfOrderRow.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfOrderRowReferenceItem }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "ArrayOfOrderRowReferenceItem")
-    public JAXBElement<ArrayOfOrderRowReferenceItem> createArrayOfOrderRowReferenceItem(ArrayOfOrderRowReferenceItem value) {
-        return new JAXBElement<ArrayOfOrderRowReferenceItem>(_ArrayOfOrderRowReferenceItem_QNAME, ArrayOfOrderRowReferenceItem.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link OrderRowReferenceItem }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "OrderRowReferenceItem")
-    public JAXBElement<OrderRowReferenceItem> createOrderRowReferenceItem(OrderRowReferenceItem value) {
-        return new JAXBElement<OrderRowReferenceItem>(_OrderRowReferenceItem_QNAME, OrderRowReferenceItem.class, null, value);
+    public OrderRowReferenceItem createOrderRowReferenceItem() {
+        return new OrderRowReferenceItem();
     }
 
     /**
@@ -2777,12 +2480,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TextMatchType3 }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link InvoiceDistributionType }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.AccountCredit", name = "TextMatchType")
-    public JAXBElement<TextMatchType3> createSearchAccountCredit(TextMatchType3 value) {
-        return new JAXBElement<TextMatchType3>(_SearchAccountCredit_QNAME, TextMatchType3 .class, null, value);
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice.DeliverOrder", name = "InvoiceDistributionType")
+    public JAXBElement<InvoiceDistributionType> createInvoiceDistributionType(InvoiceDistributionType value) {
+        return new JAXBElement<InvoiceDistributionType>(_InvoiceDistributionType_QNAME, InvoiceDistributionType.class, null, value);
     }
 
     /**
@@ -2792,6 +2495,42 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Enums", name = "AddressSource")
     public JAXBElement<AddressSource> createAddressSource(AddressSource value) {
         return new JAXBElement<AddressSource>(_AddressSource_QNAME, AddressSource.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreateOrderInformation }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", name = "CreateOrderInformation")
+    public JAXBElement<CreateOrderInformation> createCreateOrderInformation(CreateOrderInformation value) {
+        return new JAXBElement<CreateOrderInformation>(_CreateOrderInformation_QNAME, CreateOrderInformation.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreateAccountCreditDetails }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", name = "CreateAccountCreditDetails")
+    public JAXBElement<CreateAccountCreditDetails> createCreateAccountCreditDetails(CreateAccountCreditDetails value) {
+        return new JAXBElement<CreateAccountCreditDetails>(_CreateAccountCreditDetails_QNAME, CreateAccountCreditDetails.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreatePaymentPlanDetails }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", name = "CreatePaymentPlanDetails")
+    public JAXBElement<CreatePaymentPlanDetails> createCreatePaymentPlanDetails(CreatePaymentPlanDetails value) {
+        return new JAXBElement<CreatePaymentPlanDetails>(_CreatePaymentPlanDetails_QNAME, CreatePaymentPlanDetails.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreateOrderResult }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder", name = "CreateOrderResult")
+    public JAXBElement<CreateOrderResult> createCreateOrderResult(CreateOrderResult value) {
+        return new JAXBElement<CreateOrderResult>(_CreateOrderResult_QNAME, CreateOrderResult.class, null, value);
     }
 
     /**
@@ -4199,21 +3938,282 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link InvoiceDistributionType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link AccountCreditDetails }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice.DeliverOrder", name = "InvoiceDistributionType")
-    public JAXBElement<InvoiceDistributionType> createInvoiceDistributionType(InvoiceDistributionType value) {
-        return new JAXBElement<InvoiceDistributionType>(_InvoiceDistributionType_QNAME, InvoiceDistributionType.class, null, value);
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", name = "AccountCreditDetails")
+    public JAXBElement<AccountCreditDetails> createAccountCreditDetails(AccountCreditDetails value) {
+        return new JAXBElement<AccountCreditDetails>(_AccountCreditDetails_QNAME, AccountCreditDetails.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SearchAccountCreditSorting }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", name = "SearchAccountCreditSorting")
+    public JAXBElement<SearchAccountCreditSorting> createSearchAccountCreditSorting(SearchAccountCreditSorting value) {
+        return new JAXBElement<SearchAccountCreditSorting>(_SearchAccountCreditSorting_QNAME, SearchAccountCreditSorting.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SortAccountCreditProperty }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", name = "SortAccountCreditProperty")
+    public JAXBElement<SortAccountCreditProperty> createSortAccountCreditProperty(SortAccountCreditProperty value) {
+        return new JAXBElement<SortAccountCreditProperty>(_SortAccountCreditProperty_QNAME, SortAccountCreditProperty.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfGetAccountCreditInformation }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", name = "ArrayOfGetAccountCreditInformation")
+    public JAXBElement<ArrayOfGetAccountCreditInformation> createArrayOfGetAccountCreditInformation(ArrayOfGetAccountCreditInformation value) {
+        return new JAXBElement<ArrayOfGetAccountCreditInformation>(_ArrayOfGetAccountCreditInformation_QNAME, ArrayOfGetAccountCreditInformation.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAccountCreditInformation }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", name = "GetAccountCreditInformation")
+    public JAXBElement<GetAccountCreditInformation> createGetAccountCreditInformation(GetAccountCreditInformation value) {
+        return new JAXBElement<GetAccountCreditInformation>(_GetAccountCreditInformation_QNAME, GetAccountCreditInformation.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TextMatchType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.Order", name = "TextMatchType")
+    public JAXBElement<TextMatchType> createSearchOrder(TextMatchType value) {
+        return new JAXBElement<TextMatchType>(_SearchOrder_QNAME, TextMatchType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TextMatchType2 }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.Invoice", name = "TextMatchType")
+    public JAXBElement<TextMatchType2> createSearchInvoice(TextMatchType2 value) {
+        return new JAXBElement<TextMatchType2>(_SearchInvoice_QNAME, TextMatchType2 .class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOflong }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", name = "ArrayOflong")
+    public JAXBElement<ArrayOflong> createArrayOflong(ArrayOflong value) {
+        return new JAXBElement<ArrayOflong>(_ArrayOflong_QNAME, ArrayOflong.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfstring }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", name = "ArrayOfstring")
+    public JAXBElement<ArrayOfstring> createArrayOfstring(ArrayOfstring value) {
+        return new JAXBElement<ArrayOfstring>(_ArrayOfstring_QNAME, ArrayOfstring.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TextMatchType3 }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.PaymentPlan", name = "TextMatchType")
+    public JAXBElement<TextMatchType3> createSearchPaymentPlan(TextMatchType3 value) {
+        return new JAXBElement<TextMatchType3>(_SearchPaymentPlan_QNAME, TextMatchType3 .class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link OrderType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "OrderType")
+    public JAXBElement<OrderType> createOrderType(OrderType value) {
+        return new JAXBElement<OrderType>(_OrderType_QNAME, OrderType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CustomerIdentity }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "CustomerIdentity")
+    public JAXBElement<CustomerIdentity> createCustomerIdentity(CustomerIdentity value) {
+        return new JAXBElement<CustomerIdentity>(_CustomerIdentity_QNAME, CustomerIdentity.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CompanyIdentity }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "CompanyIdentity")
+    public JAXBElement<CompanyIdentity> createCompanyIdentity(CompanyIdentity value) {
+        return new JAXBElement<CompanyIdentity>(_CompanyIdentity_QNAME, CompanyIdentity.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CustomerType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "CustomerType")
+    public JAXBElement<CustomerType> createCustomerType(CustomerType value) {
+        return new JAXBElement<CustomerType>(_CustomerType_QNAME, CustomerType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link IndividualIdentity }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "IndividualIdentity")
+    public JAXBElement<IndividualIdentity> createIndividualIdentity(IndividualIdentity value) {
+        return new JAXBElement<IndividualIdentity>(_IndividualIdentity_QNAME, IndividualIdentity.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Address }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "Address")
+    public JAXBElement<Address> createAddress(Address value) {
+        return new JAXBElement<Address>(_Address_QNAME, Address.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link OrderRow }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "OrderRow")
+    public JAXBElement<OrderRow> createOrderRow(OrderRow value) {
+        return new JAXBElement<OrderRow>(_OrderRow_QNAME, OrderRow.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfOrderStatus }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "ArrayOfOrderStatus")
+    public JAXBElement<ArrayOfOrderStatus> createArrayOfOrderStatus(ArrayOfOrderStatus value) {
+        return new JAXBElement<ArrayOfOrderStatus>(_ArrayOfOrderStatus_QNAME, ArrayOfOrderStatus.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link OrderStatus }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "OrderStatus")
+    public JAXBElement<OrderStatus> createOrderStatus(OrderStatus value) {
+        return new JAXBElement<OrderStatus>(_OrderStatus_QNAME, OrderStatus.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfOrderRow }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "ArrayOfOrderRow")
+    public JAXBElement<ArrayOfOrderRow> createArrayOfOrderRow(ArrayOfOrderRow value) {
+        return new JAXBElement<ArrayOfOrderRow>(_ArrayOfOrderRow_QNAME, ArrayOfOrderRow.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfOrderRowReferenceItem }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "ArrayOfOrderRowReferenceItem")
+    public JAXBElement<ArrayOfOrderRowReferenceItem> createArrayOfOrderRowReferenceItem(ArrayOfOrderRowReferenceItem value) {
+        return new JAXBElement<ArrayOfOrderRowReferenceItem>(_ArrayOfOrderRowReferenceItem_QNAME, ArrayOfOrderRowReferenceItem.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link OrderRowReferenceItem }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Webservice", name = "OrderRowReferenceItem")
+    public JAXBElement<OrderRowReferenceItem> createOrderRowReferenceItem(OrderRowReferenceItem value) {
+        return new JAXBElement<OrderRowReferenceItem>(_OrderRowReferenceItem_QNAME, OrderRowReferenceItem.class, null, value);
     }
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TextMatchType4 }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.Order", name = "TextMatchType")
-    public JAXBElement<TextMatchType4> createSearchOrder(TextMatchType4 value) {
-        return new JAXBElement<TextMatchType4>(_SearchOrder_QNAME, TextMatchType4 .class, null, value);
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.AccountCredit", name = "TextMatchType")
+    public JAXBElement<TextMatchType4> createSearchAccountCredit(TextMatchType4 value) {
+        return new JAXBElement<TextMatchType4>(_SearchAccountCredit_QNAME, TextMatchType4 .class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetPendingReasonsResponse2 }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "GetPendingReasonsResponse")
+    public JAXBElement<GetPendingReasonsResponse2> createGetPendingReasonsResponse(GetPendingReasonsResponse2 value) {
+        return new JAXBElement<GetPendingReasonsResponse2>(_GetPendingReasonsResponse_QNAME, GetPendingReasonsResponse2 .class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SearchAccountCreditsResponse2 }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "SearchAccountCreditsResponse")
+    public JAXBElement<SearchAccountCreditsResponse2> createSearchAccountCreditsResponse(SearchAccountCreditsResponse2 value) {
+        return new JAXBElement<SearchAccountCreditsResponse2>(_SearchAccountCreditsResponse_QNAME, SearchAccountCreditsResponse2 .class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAccountCreditsResponse2 }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "GetAccountCreditsResponse")
+    public JAXBElement<GetAccountCreditsResponse2> createGetAccountCreditsResponse(GetAccountCreditsResponse2 value) {
+        return new JAXBElement<GetAccountCreditsResponse2>(_GetAccountCreditsResponse_QNAME, GetAccountCreditsResponse2 .class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CancelAccountCreditAmountResponse2 }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "CancelAccountCreditAmountResponse")
+    public JAXBElement<CancelAccountCreditAmountResponse2> createCancelAccountCreditAmountResponse(CancelAccountCreditAmountResponse2 value) {
+        return new JAXBElement<CancelAccountCreditAmountResponse2>(_CancelAccountCreditAmountResponse_QNAME, CancelAccountCreditAmountResponse2 .class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CancelAccountCreditRowsResponse2 }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "CancelAccountCreditRowsResponse")
+    public JAXBElement<CancelAccountCreditRowsResponse2> createCancelAccountCreditRowsResponse(CancelAccountCreditRowsResponse2 value) {
+        return new JAXBElement<CancelAccountCreditRowsResponse2>(_CancelAccountCreditRowsResponse_QNAME, CancelAccountCreditRowsResponse2 .class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetClientIdResponse2 }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "GetClientIdResponse")
+    public JAXBElement<GetClientIdResponse2> createGetClientIdResponse(GetClientIdResponse2 value) {
+        return new JAXBElement<GetClientIdResponse2>(_GetClientIdResponse_QNAME, GetClientIdResponse2 .class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link AccountCreditRegressReportResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "AccountCreditRegressReportResponse")
+    public JAXBElement<AccountCreditRegressReportResponse> createAccountCreditRegressReportResponse(AccountCreditRegressReportResponse value) {
+        return new JAXBElement<AccountCreditRegressReportResponse>(_AccountCreditRegressReportResponse_QNAME, AccountCreditRegressReportResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link AccountingAgreementType25ReportResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", name = "AccountingAgreementType25ReportResponse")
+    public JAXBElement<AccountingAgreementType25ReportResponse> createAccountingAgreementType25ReportResponse(AccountingAgreementType25ReportResponse value) {
+        return new JAXBElement<AccountingAgreementType25ReportResponse>(_AccountingAgreementType25ReportResponse_QNAME, AccountingAgreementType25ReportResponse.class, null, value);
     }
 
 }

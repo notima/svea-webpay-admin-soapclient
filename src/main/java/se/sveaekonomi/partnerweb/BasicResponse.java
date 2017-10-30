@@ -34,14 +34,6 @@ import javax.xml.bind.annotation.XmlType;
     "resultCode"
 })
 @XmlSeeAlso({
-    GetPendingReasonsResponse.class,
-    SearchAccountCreditsResponse.class,
-    GetAccountCreditsResponse.class,
-    CancelAccountCreditAmountResponse.class,
-    CancelAccountCreditRowsResponse.class,
-    GetClientIdResponse.class,
-    AccountCreditRegressReportResponse.class,
-    AccountingAgreementType25ReportResponse.class,
     GetOrdersResponse2 .class,
     CancelOrderRowsResponse2 .class,
     CancelOrderResponse2 .class,
@@ -65,11 +57,19 @@ import javax.xml.bind.annotation.XmlType;
     GetInvoiceJournalReportResponse2 .class,
     PdfLinkResponse.class,
     GetOrderEventsResponse2 .class,
+    GetPendingReasonsResponse2 .class,
     GetInvoicesWithChangedDueDateResponse2 .class,
     ChangeInvoiceDueDateResponse2 .class,
     CreateApprovedOrderResponse2 .class,
     CancelPaymentPlanRowsResponse2 .class,
-    CancelPaymentPlanAmountResponse2 .class
+    CancelPaymentPlanAmountResponse2 .class,
+    SearchAccountCreditsResponse2 .class,
+    GetAccountCreditsResponse2 .class,
+    CancelAccountCreditAmountResponse2 .class,
+    CancelAccountCreditRowsResponse2 .class,
+    GetClientIdResponse2 .class,
+    AccountCreditRegressReportResponse.class,
+    AccountingAgreementType25ReportResponse.class
 })
 public class BasicResponse {
 

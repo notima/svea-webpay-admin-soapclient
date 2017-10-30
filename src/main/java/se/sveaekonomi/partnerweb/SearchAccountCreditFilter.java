@@ -62,7 +62,7 @@ public class SearchAccountCreditFilter {
     protected String textMatch;
     @XmlElement(name = "TextMatchType", nillable = true)
     @XmlSchemaType(name = "string")
-    protected TextMatchType3 textMatchType;
+    protected TextMatchType4 textMatchType;
 
     /**
      * Gets the value of the acceptedAccountCreditStatuses property.
@@ -213,10 +213,10 @@ public class SearchAccountCreditFilter {
      * 
      * @return
      *     possible object is
-     *     {@link TextMatchType3 }
+     *     {@link TextMatchType4 }
      *     
      */
-    public TextMatchType3 getTextMatchType() {
+    public TextMatchType4 getTextMatchType() {
         return textMatchType;
     }
 
@@ -225,10 +225,10 @@ public class SearchAccountCreditFilter {
      * 
      * @param value
      *     allowed object is
-     *     {@link TextMatchType3 }
+     *     {@link TextMatchType4 }
      *     
      */
-    public void setTextMatchType(TextMatchType3 value) {
+    public void setTextMatchType(TextMatchType4 value) {
         this.textMatchType = value;
     }
 

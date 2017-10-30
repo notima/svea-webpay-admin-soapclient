@@ -4,22 +4,23 @@ package se.sveaekonomi.partnerweb;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for GetClientIdResponse complex type.
+ * <p>Java class for anonymous complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="GetClientIdResponse"&gt;
+ * &lt;complexType&gt;
  *   &lt;complexContent&gt;
- *     &lt;extension base="{http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service}BasicResponse"&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="ClientId" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="GetClientIdResult" type="{http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses}GetClientIdResponse" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
- *     &lt;/extension&gt;
+ *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
@@ -27,38 +28,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "GetClientIdResponse", namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", propOrder = {
-    "clientId"
+@XmlType(name = "", propOrder = {
+    "getClientIdResult"
 })
-public class GetClientIdResponse
-    extends BasicResponse
-{
+@XmlRootElement(name = "GetClientIdResponse", namespace = "http://tempuri.org/")
+public class GetClientIdResponse {
 
-    @XmlElement(name = "ClientId")
-    protected Long clientId;
+    @XmlElement(name = "GetClientIdResult", namespace = "http://tempuri.org/", nillable = true)
+    protected GetClientIdResponse2 getClientIdResult;
 
     /**
-     * Gets the value of the clientId property.
+     * Gets the value of the getClientIdResult property.
      * 
      * @return
      *     possible object is
-     *     {@link Long }
+     *     {@link GetClientIdResponse2 }
      *     
      */
-    public Long getClientId() {
-        return clientId;
+    public GetClientIdResponse2 getGetClientIdResult() {
+        return getClientIdResult;
     }
 
     /**
-     * Sets the value of the clientId property.
+     * Sets the value of the getClientIdResult property.
      * 
      * @param value
      *     allowed object is
-     *     {@link Long }
+     *     {@link GetClientIdResponse2 }
      *     
      */
-    public void setClientId(Long value) {
-        this.clientId = value;
+    public void setGetClientIdResult(GetClientIdResponse2 value) {
+        this.getClientIdResult = value;
     }
 
 }

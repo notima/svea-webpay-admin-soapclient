@@ -19,49 +19,49 @@
 	<wsdl:types>
 		<xsd:schema targetNamespace="http://tempuri.org/Imports">
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd0"
+				schemaLocation="AdminService.xsd0.xsd"
 				namespace="http://tempuri.org/" />
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd1"
+				schemaLocation="AdminService.xsd1.xsd"
 				namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd2"
+				schemaLocation="AdminService.xsd2.xsd"
 				namespace="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service" />
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd3"
+				schemaLocation="AdminService.xsd3.xsd"
 				namespace="http://schemas.datacontract.org/2004/07/DataObjects.Webservice" />
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd4"
+				schemaLocation="AdminService.xsd4.xsd"
 				namespace="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account" />
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd5"
+				schemaLocation="AdminService.xsd5.xsd"
 				namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd6"
+				schemaLocation="AdminService.xsd6.xsd"
 				namespace="http://schemas.datacontract.org/2004/07/DataObjects.Webservice.DeliverOrder" />
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd7"
+				schemaLocation="AdminService.xsd7.xsd"
 				namespace="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.Order" />
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd8"
+				schemaLocation="AdminService.xsd8.xsd"
 				namespace="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.Invoice" />
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd9"
+				schemaLocation="AdminService.xsd9.xsd"
 				namespace="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.PaymentPlan" />
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd10"
+				schemaLocation="AdminService.xsd10.xsd"
 				namespace="http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder" />
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd11"
+				schemaLocation="AdminService.xsd11.xsd"
 				namespace="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests" />
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd12"
+				schemaLocation="AdminService.xsd12.xsd"
 				namespace="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses" />
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd13"
+				schemaLocation="AdminService.xsd13.xsd"
 				namespace="http://schemas.datacontract.org/2004/07/DataObjects.Enums" />
 			<xsd:import
-				schemaLocation="http://webpayadminservice.svea.com/AdminService.svc?xsd=xsd14"
+				schemaLocation="AdminService.xsd14.xsd"
 				namespace="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.AccountCredit" />
 		</xsd:schema>
 	</wsdl:types>

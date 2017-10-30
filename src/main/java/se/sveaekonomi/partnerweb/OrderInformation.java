@@ -21,7 +21,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="AccountCreditInformation" type="{http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service}AccountCreditInformation" minOccurs="0"/&gt;
- *         &lt;element name="Amount" type="{http://www.w3.org/2001/XMLSchema}decimal"/&gt;
+ *         &lt;element name="Amount" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
  *         &lt;element name="CheckoutOrderId" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
  *         &lt;element name="ClientId" type="{http://www.w3.org/2001/XMLSchema}long"/&gt;
  *         &lt;element name="ClientOrderId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
@@ -65,7 +65,7 @@ public class OrderInformation {
 
     @XmlElement(name = "AccountCreditInformation", nillable = true)
     protected AccountCreditInformation accountCreditInformation;
-    @XmlElement(name = "Amount", required = true)
+    @XmlElement(name = "Amount")
     protected BigDecimal amount;
     @XmlElement(name = "CheckoutOrderId", nillable = true)
     protected Long checkoutOrderId;
