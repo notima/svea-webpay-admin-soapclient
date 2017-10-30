@@ -2,7 +2,7 @@
 C:\dev\wrkspc\adempiere\svea-admin-client>wsdl2java.bat -frontend jaxws21 
 -d src\main\java
 -b src\main\resources\bindings.xml
--client https://partnerweb.sveaekonomi.se/WebPayAdminService/AdminService.svc?wsdl
+-client https://webpayadminservice.svea.com/AdminService.svc?wsdl
 
 C:\dev\wrkspc\adempiere\se.cyberphoto.svea>wsdl2java.bat -frontend jaxws21 
 -d src\main\java
@@ -18,25 +18,25 @@ xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
 xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
    <jaxb:globalBindings generateElementProperty="false"/> 
    
-   <jaxb:bindings schemaLocation="https://partnerweb.sveaekonomi.se/WebPayAdminService/AdminService.svc?xsd=xsd7">
+   <jaxb:bindings schemaLocation="https://webpayadminservice.svea.com/AdminService.svc?xsd=xsd7">
    	<jaxb:bindings node="//xs:element[@name='TextMatchType']">
    		<jaxb:factoryMethod name="SearchOrder"/>
    	</jaxb:bindings>
    </jaxb:bindings>
    
-   <jaxb:bindings schemaLocation="https://partnerweb.sveaekonomi.se/WebPayAdminService/AdminService.svc?xsd=xsd8">
+   <jaxb:bindings schemaLocation="https://webpayadminservice.svea.com/AdminService.svc?xsd=xsd8">
    	<jaxb:bindings node="//xs:element[@name='TextMatchType']">
    		<jaxb:factoryMethod name="SearchInvoice"/>
    	</jaxb:bindings>
    </jaxb:bindings>
    
-   <jaxb:bindings schemaLocation="https://partnerweb.sveaekonomi.se/WebPayAdminService/AdminService.svc?xsd=xsd9">
+   <jaxb:bindings schemaLocation="https://webpayadminservice.svea.com/AdminService.svc?xsd=xsd9">
    	<jaxb:bindings node="//xs:element[@name='TextMatchType']">
    		<jaxb:factoryMethod name="SearchPaymentPlan"/>
    	</jaxb:bindings>
    </jaxb:bindings>
 
-   <jaxb:bindings schemaLocation="https://partnerweb.sveaekonomi.se/WebPayAdminService/AdminService.svc?xsd=xsd14">
+   <jaxb:bindings schemaLocation="https://webpayadminservice.svea.com/AdminService.svc?xsd=xsd14">
    	<jaxb:bindings node="//xs:element[@name='TextMatchType']">
    		<jaxb:factoryMethod name="SearchAccountCredit"/>
    	</jaxb:bindings>
