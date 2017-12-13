@@ -14,6 +14,7 @@ Instructions to regenerate.
 2. Change references to xsd-s to local xsds.
 3. If any of the xsds have changed, download new versions.
 4. Regenerate from the modified AdminService.svc.wsdl.
+5. Update the WSDL-location to relative in AdminService.java 
 
 -->
 

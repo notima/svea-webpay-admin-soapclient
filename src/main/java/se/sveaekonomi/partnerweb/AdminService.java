@@ -15,7 +15,7 @@ import javax.xml.ws.Service;
  * 
  */
 @WebServiceClient(name = "AdminService", 
-                  wsdlLocation = "file:src/main/resources/AdminService.svc.1.30.wsdl",
+                  wsdlLocation = "AdminService.svc.1.30.wsdl",
                   targetNamespace = "http://tempuri.org/") 
 public class AdminService extends Service {
 
@@ -25,16 +25,16 @@ public class AdminService extends Service {
     public final static QName AdminSoapService = new QName("http://tempuri.org/", "AdminSoapService");
     public final static QName WcfAdminSoapService = new QName("http://tempuri.org/", "WcfAdminSoapService");
     static {
-        URL url = null;
-        try {
-            url = new URL("file:src/main/resources/AdminService.svc.1.30.wsdl");
-        } catch (MalformedURLException e) {
+        URL url = AdminService.class.getResource("AdminService.svc.1.30.wsdl");
+        if (url == null) {
+            url = AdminService.class.getClassLoader().getResource("AdminService.svc.1.30.wsdl");
+        } 
+        if (url == null) {
             java.util.logging.Logger.getLogger(AdminService.class.getName())
                 .log(java.util.logging.Level.INFO, 
-                     "Can not initialize the default wsdl from {0}", "file:src/main/resources/AdminService.svc.1.30.wsdl");
-        }
-        WSDL_LOCATION = url;
-    }
+                     "Can not initialize the default wsdl from {0}", "AdminService.svc.1.30.wsdl");
+        }       
+        WSDL_LOCATION = url;    }
 
     public AdminService(URL wsdlLocation) {
         super(wsdlLocation, SERVICE);
