@@ -90,4 +90,35 @@
 	</xs:complexType>
 	<xs:element name="AccountingAgreementType25ReportRequest"
 		nillable="true" type="tns:AccountingAgreementType25ReportRequest" />
+	<xs:complexType name="GetSpecificationReportRequest">
+		<xs:complexContent mixed="false">
+			<xs:extension base="q7:BasicRequest"
+				xmlns:q7="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="ClientId" type="xs:long" />
+					<xs:element minOccurs="0" name="FromDate" type="xs:dateTime" />
+					<xs:element minOccurs="0" name="ReportType"
+						type="q7:SpecificationReportType" />
+					<xs:element minOccurs="0" name="ToDate" type="xs:dateTime" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="GetSpecificationReportRequest" nillable="true"
+		type="tns:GetSpecificationReportRequest" />
+	<xs:complexType name="GetSpecificationReportResponse">
+		<xs:complexContent mixed="false">
+			<xs:extension base="q8:BasicResponse"
+				xmlns:q8="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="Rows" nillable="true"
+						type="q8:ArrayOfSpecificationRow" />
+					<xs:element minOccurs="0" name="Summation" nillable="true"
+						type="q8:SpecificationSummation" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="GetSpecificationReportResponse" nillable="true"
+		type="tns:GetSpecificationReportResponse" />
 </xs:schema>

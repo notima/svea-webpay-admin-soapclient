@@ -1,16 +1,19 @@
 <!--
-C:\dev\wrkspc\adempiere\svea-admin-client>wsdl2java.bat -frontend jaxws21 
--p com.svea.webpayadminservice
--d src\main\java
--b src\main\resources\bindings.xml
--autoNameResolution
--client AdminService.svc
 
-C:\dev\wrkspc\adempiere\se.cyberphoto.svea>wsdl2java.bat -frontend jaxws21 
+ Use Apache CXF (http://cxf.apache.org/).
+ Last used version 3.2.0
+ 
+ wsdl2java.bat -frontend jaxws21 
+-p se.sveaekonomi.partnerweb
 -d src\main\java
 -b src\main\resources\bindings.xml -autoNameResolution 
--client https://webservices.sveaekonomi.se/webpay/sveawebpay.asmx?wsdl
+-client https://webpayadminservice.svea.com/AdminService.svc?wsdl
 
+Instructions to regenerate. 
+1. Save AdminService.svc.wsdl locally.
+2. Change references to xsd-s to local xsds.
+3. If any of the xsds have changed, download new versions.
+4. Regenerate from the modified AdminService.svc.wsdl.
 
 -->
 

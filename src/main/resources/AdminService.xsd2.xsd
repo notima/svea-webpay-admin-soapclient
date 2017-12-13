@@ -2404,4 +2404,54 @@
 	</xs:complexType>
 	<xs:element name="AccountingAgreementType25Summation"
 		nillable="true" type="tns:AccountingAgreementType25Summation" />
+	<xs:simpleType name="SpecificationReportType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Bank">
+				<xs:annotation>
+					<xs:appinfo>
+						<EnumerationValue
+							xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Card">
+				<xs:annotation>
+					<xs:appinfo>
+						<EnumerationValue
+							xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="SpecificationReportType" nillable="true"
+		type="tns:SpecificationReportType" />
+	<xs:complexType name="ArrayOfSpecificationRow">
+		<xs:sequence>
+			<xs:element minOccurs="0" maxOccurs="unbounded" name="SpecificationRow"
+				nillable="true" type="tns:SpecificationRow" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ArrayOfSpecificationRow" nillable="true"
+		type="tns:ArrayOfSpecificationRow" />
+	<xs:complexType name="SpecificationRow">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+			<xs:element minOccurs="0" name="ClientOrderNumber"
+				nillable="true" type="xs:string" />
+			<xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+			<xs:element minOccurs="0" name="Fee" type="xs:decimal" />
+			<xs:element minOccurs="0" name="TransactionId" type="xs:long" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="SpecificationRow" nillable="true"
+		type="tns:SpecificationRow" />
+	<xs:complexType name="SpecificationSummation">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="TotalAmount" type="xs:decimal" />
+			<xs:element minOccurs="0" name="TotalFee" type="xs:decimal" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="SpecificationSummation" nillable="true"
+		type="tns:SpecificationSummation" />
 </xs:schema>

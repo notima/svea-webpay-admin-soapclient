@@ -74,7 +74,8 @@ import javax.xml.bind.annotation.XmlType;
     CancelAccountCreditRowsRequest.class,
     GetClientIdRequest.class,
     AccountCreditRegressReportRequest.class,
-    AccountingAgreementType25ReportRequest.class
+    AccountingAgreementType25ReportRequest.class,
+    GetSpecificationReportRequest.class
 })
 public class BasicRequest {
 

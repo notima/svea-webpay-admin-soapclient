@@ -205,12 +205,18 @@ public class ObjectFactory {
     private final static QName _AccountingAgreementType25ReportDataRow_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service", "AccountingAgreementType25ReportDataRow");
     private final static QName _ArrayOfAccountingAgreementType25Summation_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service", "ArrayOfAccountingAgreementType25Summation");
     private final static QName _AccountingAgreementType25Summation_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service", "AccountingAgreementType25Summation");
+    private final static QName _SpecificationReportType_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service", "SpecificationReportType");
+    private final static QName _ArrayOfSpecificationRow_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service", "ArrayOfSpecificationRow");
+    private final static QName _SpecificationRow_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service", "SpecificationRow");
+    private final static QName _SpecificationSummation_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service", "SpecificationSummation");
     private final static QName _GetPendingReasonsRequest_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests", "GetPendingReasonsRequest");
     private final static QName _CancelAccountCreditAmountRequest_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests", "CancelAccountCreditAmountRequest");
     private final static QName _CancelAccountCreditRowsRequest_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests", "CancelAccountCreditRowsRequest");
     private final static QName _GetClientIdRequest_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests", "GetClientIdRequest");
     private final static QName _AccountCreditRegressReportRequest_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests", "AccountCreditRegressReportRequest");
     private final static QName _AccountingAgreementType25ReportRequest_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests", "AccountingAgreementType25ReportRequest");
+    private final static QName _GetSpecificationReportRequest_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests", "GetSpecificationReportRequest");
+    private final static QName _GetSpecificationReportResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests", "GetSpecificationReportResponse");
     private final static QName _AccountCreditDetails_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", "AccountCreditDetails");
     private final static QName _SearchAccountCreditSorting_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", "SearchAccountCreditSorting");
     private final static QName _SortAccountCreditProperty_QNAME = new QName("http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account", "SortAccountCreditProperty");
@@ -1555,6 +1561,38 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetSpecificationReport }
+     * 
+     */
+    public GetSpecificationReport createGetSpecificationReport() {
+        return new GetSpecificationReport();
+    }
+
+    /**
+     * Create an instance of {@link GetSpecificationReportRequest }
+     * 
+     */
+    public GetSpecificationReportRequest createGetSpecificationReportRequest() {
+        return new GetSpecificationReportRequest();
+    }
+
+    /**
+     * Create an instance of {@link GetSpecificationReportResponse }
+     * 
+     */
+    public GetSpecificationReportResponse createGetSpecificationReportResponse() {
+        return new GetSpecificationReportResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetSpecificationReportResponse2 }
+     * 
+     */
+    public GetSpecificationReportResponse2 createGetSpecificationReportResponse2() {
+        return new GetSpecificationReportResponse2();
+    }
+
+    /**
      * Create an instance of {@link BasicRequest }
      * 
      */
@@ -2168,6 +2206,30 @@ public class ObjectFactory {
      */
     public AccountingAgreementType25Summation createAccountingAgreementType25Summation() {
         return new AccountingAgreementType25Summation();
+    }
+
+    /**
+     * Create an instance of {@link ArrayOfSpecificationRow }
+     * 
+     */
+    public ArrayOfSpecificationRow createArrayOfSpecificationRow() {
+        return new ArrayOfSpecificationRow();
+    }
+
+    /**
+     * Create an instance of {@link SpecificationRow }
+     * 
+     */
+    public SpecificationRow createSpecificationRow() {
+        return new SpecificationRow();
+    }
+
+    /**
+     * Create an instance of {@link SpecificationSummation }
+     * 
+     */
+    public SpecificationSummation createSpecificationSummation() {
+        return new SpecificationSummation();
     }
 
     /**
@@ -3884,6 +3946,42 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SpecificationReportType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service", name = "SpecificationReportType")
+    public JAXBElement<SpecificationReportType> createSpecificationReportType(SpecificationReportType value) {
+        return new JAXBElement<SpecificationReportType>(_SpecificationReportType_QNAME, SpecificationReportType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfSpecificationRow }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service", name = "ArrayOfSpecificationRow")
+    public JAXBElement<ArrayOfSpecificationRow> createArrayOfSpecificationRow(ArrayOfSpecificationRow value) {
+        return new JAXBElement<ArrayOfSpecificationRow>(_ArrayOfSpecificationRow_QNAME, ArrayOfSpecificationRow.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SpecificationRow }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service", name = "SpecificationRow")
+    public JAXBElement<SpecificationRow> createSpecificationRow(SpecificationRow value) {
+        return new JAXBElement<SpecificationRow>(_SpecificationRow_QNAME, SpecificationRow.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SpecificationSummation }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service", name = "SpecificationSummation")
+    public JAXBElement<SpecificationSummation> createSpecificationSummation(SpecificationSummation value) {
+        return new JAXBElement<SpecificationSummation>(_SpecificationSummation_QNAME, SpecificationSummation.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetPendingReasonsRequest }{@code >}}
      * 
      */
@@ -3935,6 +4033,24 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests", name = "AccountingAgreementType25ReportRequest")
     public JAXBElement<AccountingAgreementType25ReportRequest> createAccountingAgreementType25ReportRequest(AccountingAgreementType25ReportRequest value) {
         return new JAXBElement<AccountingAgreementType25ReportRequest>(_AccountingAgreementType25ReportRequest_QNAME, AccountingAgreementType25ReportRequest.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetSpecificationReportRequest }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests", name = "GetSpecificationReportRequest")
+    public JAXBElement<GetSpecificationReportRequest> createGetSpecificationReportRequest(GetSpecificationReportRequest value) {
+        return new JAXBElement<GetSpecificationReportRequest>(_GetSpecificationReportRequest_QNAME, GetSpecificationReportRequest.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetSpecificationReportResponse2 }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Requests", name = "GetSpecificationReportResponse")
+    public JAXBElement<GetSpecificationReportResponse2> createGetSpecificationReportResponse(GetSpecificationReportResponse2 value) {
+        return new JAXBElement<GetSpecificationReportResponse2>(_GetSpecificationReportResponse_QNAME, GetSpecificationReportResponse2 .class, null, value);
     }
 
     /**

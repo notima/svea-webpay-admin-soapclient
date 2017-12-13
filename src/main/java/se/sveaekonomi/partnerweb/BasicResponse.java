@@ -69,7 +69,8 @@ import javax.xml.bind.annotation.XmlType;
     CancelAccountCreditRowsResponse2 .class,
     GetClientIdResponse2 .class,
     AccountCreditRegressReportResponse.class,
-    AccountingAgreementType25ReportResponse.class
+    AccountingAgreementType25ReportResponse.class,
+    GetSpecificationReportResponse2 .class
 })
 public class BasicResponse {
 

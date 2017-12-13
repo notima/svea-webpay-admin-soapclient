@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>se.notima</groupId>
 	<artifactId>svea-admin-client</artifactId>
-	<version>1.29.0</version>
+	<version>1.30.0</version>
 	<name>Svea Admin Client</name>
 
 	<properties>
