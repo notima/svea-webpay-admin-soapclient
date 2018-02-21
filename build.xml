@@ -8,4 +8,14 @@
 	  	</exec>
 		
     </target>
+	
+	<target name="svea-admin-client-release">
+
+	  	<exec dir="${basedir}" executable="bash">
+	  		<arg line="-c 'mvn install -DperformRelease=true -DcreateChecksum=true -DskipTests'"/>
+	  	</exec>
+		
+    </target>
+	
+	
 </project>
