@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="svea-admin-client" default="svea-admin-client" basedir=".">
 
+	<loadproperties srcfile="ant-build.properties"/>
+
+	<!--
+		Target that re-generates the code
+	-->
+	<target name="run-cxf">
+		
+		<exec dir="${basedir}" executable="bash">
+			<arg line="-c '${CXF_HOME}/bin/wsdl2java -frontend jaxws21 -d src/main/java -b src/main/resources/bindings.xml 
+						   -p org.notima.sveawebpayadmin -autoNameResolution  
+						   -client src/main/resources/AdminService.${versionDate}.wsdl 
+							'"/> 
+		</exec>
+		
+	</target>
+	
 	<target name="svea-admin-client">
 
 	  	<exec dir="${basedir}" executable="bash">

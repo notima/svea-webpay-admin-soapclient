@@ -106,4 +106,17 @@
 	</xs:complexType>
 	<xs:element name="AccountingAgreementType25ReportResponse"
 		nillable="true" type="tns:AccountingAgreementType25ReportResponse" />
+	<xs:complexType name="GetClientsByIdentityAccountResponse">
+		<xs:complexContent mixed="false">
+			<xs:extension base="q9:BasicResponse"
+				xmlns:q9="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="Clients" nillable="true"
+						type="q9:ArrayOfClientData" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="GetClientsByIdentityAccountResponse"
+		nillable="true" type="tns:GetClientsByIdentityAccountResponse" />
 </xs:schema>

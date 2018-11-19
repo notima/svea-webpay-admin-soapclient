@@ -1,19 +1,19 @@
 <!--
 
  Use Apache CXF (http://cxf.apache.org/).
- Last used version 3.2.0
+ Last used version 3.2.7
  
  wsdl2java.bat -frontend jaxws21 
--p se.sveaekonomi.partnerweb
+-p org.notima.sveawebpayadmin
 -d src\main\java
 -b src\main\resources\bindings.xml -autoNameResolution 
 -client https://webpayadminservice.svea.com/AdminService.svc?wsdl
 
 Instructions to regenerate. 
-1. Save AdminService.svc.wsdl locally.
+1. Save AdminService.wsdl locally.
 2. Change references to xsd-s to local xsds.
 3. If any of the xsds have changed, download new versions.
-4. Regenerate from the modified AdminService.svc.wsdl.
+4. Regenerate from the modified AdminService.wsdl (see also run-cxf target in build.xml).
 5. Update the WSDL-location to relative in AdminService.java 
 
 -->

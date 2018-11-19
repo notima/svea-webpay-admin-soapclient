@@ -121,4 +121,14 @@
 	</xs:complexType>
 	<xs:element name="GetSpecificationReportResponse" nillable="true"
 		type="tns:GetSpecificationReportResponse" />
+	<xs:complexType name="GetClientsByIdentityAccountRequest">
+		<xs:complexContent mixed="false">
+			<xs:extension base="q9:BasicRequest"
+				xmlns:q9="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service">
+				<xs:sequence />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="GetClientsByIdentityAccountRequest"
+		nillable="true" type="tns:GetClientsByIdentityAccountRequest" />
 </xs:schema>
