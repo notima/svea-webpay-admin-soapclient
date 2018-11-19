@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="svea-admin-client" default="svea-admin-client" basedir=".">
+<project name="webpay-admin-client" default="webpay-admin-client" basedir=".">
 
 	<loadproperties srcfile="ant-build.properties"/>
 
@@ -17,7 +17,7 @@
 		
 	</target>
 	
-	<target name="svea-admin-client">
+	<target name="webpay-admin-client">
 
 	  	<exec dir="${basedir}" executable="bash">
 	  		<arg line="-c 'mvn install -DskipTests'"/>
@@ -25,13 +25,24 @@
 		
     </target>
 	
-	<target name="svea-admin-client-release">
+	<target name="webpay-admin-client-release">
 
 	  	<exec dir="${basedir}" executable="bash">
 	  		<arg line="-c 'mvn install -DperformRelease=true -DcreateChecksum=true -DskipTests'"/>
 	  	</exec>
 		
     </target>
+	
+	<target name="2maven" depends="webpay-admin-client-release">
+		
+		<copy file="${maven-local-dir}/${group}/${artifact}/maven-metadata-local.xml" tofile="${maven-release-dir}/${group}/${artifact}/maven-metadata.xml"/>
+		<copy file="${maven-local-dir}/${group}/${artifact}/maven-metadata-local.xml.md5" tofile="${maven-release-dir}/${group}/${artifact}/maven-metadata.xml.md5"/>
+		<copy file="${maven-local-dir}/${group}/${artifact}/maven-metadata-local.xml.sha1" tofile="${maven-release-dir}/${group}/${artifact}/maven-metadata.xml.sha1"/>
+		<copy todir="${maven-release-dir}/${group}/${artifact}/${version}">
+			<fileset dir="${maven-local-dir}/${group}/${artifact}/${version}"/> 
+		</copy>
+		
+	</target>	
 	
 	
 </project>
