@@ -338,6 +338,8 @@
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
+			<xs:element minOccurs="0" name="Notes" nillable="true"
+				type="xs:string" />
 			<xs:element minOccurs="0" name="OrderType" type="q11:OrderType"
 				xmlns:q11="http://schemas.datacontract.org/2004/07/DataObjects.Webservice" />
 			<xs:element minOccurs="0" name="PrintType" nillable="true"
@@ -1547,6 +1549,7 @@
 		<xs:sequence>
 			<xs:element name="AdministrationFee" type="xs:decimal" />
 			<xs:element name="Amount" type="xs:decimal" />
+			<xs:element minOccurs="0" name="CheckoutOrderId" type="xs:long" />
 			<xs:element name="ClientId" type="xs:long" />
 			<xs:element minOccurs="0" name="ClientOrderNumber"
 				nillable="true" type="xs:string" />
@@ -1554,7 +1557,11 @@
 			<xs:element name="CustomerId" type="xs:long" />
 			<xs:element name="InvoiceId" type="xs:long" />
 			<xs:element name="Name" nillable="true" type="xs:string" />
+			<xs:element name="PostageFee" type="xs:decimal" />
 			<xs:element name="ReportDate" type="xs:dateTime" />
+			<xs:element minOccurs="0" name="SveaOrderCreationDate"
+				type="xs:dateTime" />
+			<xs:element minOccurs="0" name="SveaOrderId" type="xs:long" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:element name="InvoiceReportRow" nillable="true"
@@ -1643,6 +1650,7 @@
 	<xs:complexType name="RegressionReportRow">
 		<xs:sequence>
 			<xs:element minOccurs="0" name="Capital" type="xs:decimal" />
+			<xs:element minOccurs="0" name="CheckoutOrderId" type="xs:long" />
 			<xs:element name="ClientId" type="xs:int" />
 			<xs:element minOccurs="0" name="ClientOrderNumber"
 				nillable="true" type="xs:string" />
@@ -1656,6 +1664,8 @@
 			<xs:element minOccurs="0" name="RecordDate" type="xs:dateTime" />
 			<xs:element minOccurs="0" name="ReportingDate" type="xs:dateTime" />
 			<xs:element name="RowNumber" type="xs:int" />
+			<xs:element name="SveaOrderCreationDate" type="xs:dateTime" />
+			<xs:element name="SveaOrderId" type="xs:long" />
 			<xs:element name="TransactionAmount" type="xs:decimal" />
 			<xs:element name="TransactionType" type="xs:int" />
 			<xs:element minOccurs="0" name="User" nillable="true"
@@ -1701,6 +1711,7 @@
 		<xs:sequence>
 			<xs:element minOccurs="0" name="AdministrationFee" type="xs:decimal" />
 			<xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+			<xs:element minOccurs="0" name="CheckoutOrderId" type="xs:long" />
 			<xs:element name="ClientId" type="xs:int" />
 			<xs:element name="ContractId" type="xs:long" />
 			<xs:element name="CustomerId" type="xs:long" />
@@ -1710,6 +1721,9 @@
 				type="xs:string" />
 			<xs:element minOccurs="0" name="PayToClientAmount" type="xs:decimal" />
 			<xs:element name="ReportingDate" type="xs:dateTime" />
+			<xs:element minOccurs="0" name="SveaOrderCreationDate"
+				nillable="true" type="xs:dateTime" />
+			<xs:element minOccurs="0" name="SveaOrderId" type="xs:long" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:element name="PaymentPlanReportRow" nillable="true"
@@ -2332,6 +2346,7 @@
 			<xs:element minOccurs="0" name="AccountCreditNumber" type="xs:int" />
 			<xs:element minOccurs="0" name="AdministratorId" type="xs:int" />
 			<xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+			<xs:element minOccurs="0" name="CheckoutOrderId" type="xs:long" />
 			<xs:element minOccurs="0" name="ClientId" type="xs:long" />
 			<xs:element minOccurs="0" name="ClientName" nillable="true"
 				type="xs:string" />
@@ -2347,6 +2362,9 @@
 			<xs:element minOccurs="0" name="CustomerName" nillable="true"
 				type="xs:string" />
 			<xs:element minOccurs="0" name="InvoiceId" type="xs:int" />
+			<xs:element minOccurs="0" name="SveaOrderCreationDate"
+				nillable="true" type="xs:dateTime" />
+			<xs:element minOccurs="0" name="SveaOrderId" type="xs:long" />
 			<xs:element minOccurs="0" name="TransactionDate" type="xs:dateTime" />
 			<xs:element minOccurs="0" name="TransactionType" type="xs:int" />
 		</xs:sequence>
@@ -2454,4 +2472,23 @@
 	</xs:complexType>
 	<xs:element name="SpecificationSummation" nillable="true"
 		type="tns:SpecificationSummation" />
+	<xs:complexType name="ArrayOfClientData">
+		<xs:sequence>
+			<xs:element minOccurs="0" maxOccurs="unbounded" name="ClientData"
+				nillable="true" type="tns:ClientData" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ArrayOfClientData" nillable="true"
+		type="tns:ArrayOfClientData" />
+	<xs:complexType name="ClientData">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="AgreementType" type="xs:int" />
+			<xs:element minOccurs="0" name="ClientId" type="xs:long" />
+			<xs:element minOccurs="0" name="Country" nillable="true"
+				type="xs:string" />
+			<xs:element minOccurs="0" name="Currency" nillable="true"
+				type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ClientData" nillable="true" type="tns:ClientData" />
 </xs:schema>
