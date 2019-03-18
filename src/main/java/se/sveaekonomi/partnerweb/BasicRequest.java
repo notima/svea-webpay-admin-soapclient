@@ -75,7 +75,11 @@ import javax.xml.bind.annotation.XmlType;
     GetClientIdRequest.class,
     AccountCreditRegressReportRequest.class,
     AccountingAgreementType25ReportRequest.class,
-    GetSpecificationReportRequest.class
+    GetSpecificationReportRequest.class,
+    GetClientsByIdentityAccountRequest.class,
+    GetInvoicesPaidToClientForReportRequest.class,
+    GetDebtInvoicesPaidToClientForReportRequest.class,
+    GetKickbackReportRequest.class
 })
 public class BasicRequest {
 

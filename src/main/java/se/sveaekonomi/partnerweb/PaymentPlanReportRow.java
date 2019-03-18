@@ -22,6 +22,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *       &lt;sequence&gt;
  *         &lt;element name="AdministrationFee" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
  *         &lt;element name="Amount" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="CheckoutOrderId" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
  *         &lt;element name="ClientId" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="ContractId" type="{http://www.w3.org/2001/XMLSchema}long"/&gt;
  *         &lt;element name="CustomerId" type="{http://www.w3.org/2001/XMLSchema}long"/&gt;
@@ -30,6 +31,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *         &lt;element name="OrderId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="PayToClientAmount" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
  *         &lt;element name="ReportingDate" type="{http://www.w3.org/2001/XMLSchema}dateTime"/&gt;
+ *         &lt;element name="SveaOrderCreationDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *         &lt;element name="SveaOrderId" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -42,6 +45,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 @XmlType(name = "PaymentPlanReportRow", propOrder = {
     "administrationFee",
     "amount",
+    "checkoutOrderId",
     "clientId",
     "contractId",
     "customerId",
@@ -49,7 +53,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "name",
     "orderId",
     "payToClientAmount",
-    "reportingDate"
+    "reportingDate",
+    "sveaOrderCreationDate",
+    "sveaOrderId"
 })
 public class PaymentPlanReportRow {
 
@@ -57,6 +63,8 @@ public class PaymentPlanReportRow {
     protected BigDecimal administrationFee;
     @XmlElement(name = "Amount")
     protected BigDecimal amount;
+    @XmlElement(name = "CheckoutOrderId", nillable = true)
+    protected Long checkoutOrderId;
     @XmlElement(name = "ClientId")
     protected int clientId;
     @XmlElement(name = "ContractId")
@@ -75,6 +83,11 @@ public class PaymentPlanReportRow {
     @XmlElement(name = "ReportingDate", required = true)
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar reportingDate;
+    @XmlElement(name = "SveaOrderCreationDate", nillable = true)
+    @XmlSchemaType(name = "dateTime")
+    protected XMLGregorianCalendar sveaOrderCreationDate;
+    @XmlElement(name = "SveaOrderId", nillable = true)
+    protected Long sveaOrderId;
 
     /**
      * Gets the value of the administrationFee property.
@@ -122,6 +135,30 @@ public class PaymentPlanReportRow {
      */
     public void setAmount(BigDecimal value) {
         this.amount = value;
+    }
+
+    /**
+     * Gets the value of the checkoutOrderId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
+     */
+    public Long getCheckoutOrderId() {
+        return checkoutOrderId;
+    }
+
+    /**
+     * Sets the value of the checkoutOrderId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
+     */
+    public void setCheckoutOrderId(Long value) {
+        this.checkoutOrderId = value;
     }
 
     /**
@@ -290,6 +327,54 @@ public class PaymentPlanReportRow {
      */
     public void setReportingDate(XMLGregorianCalendar value) {
         this.reportingDate = value;
+    }
+
+    /**
+     * Gets the value of the sveaOrderCreationDate property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    public XMLGregorianCalendar getSveaOrderCreationDate() {
+        return sveaOrderCreationDate;
+    }
+
+    /**
+     * Sets the value of the sveaOrderCreationDate property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    public void setSveaOrderCreationDate(XMLGregorianCalendar value) {
+        this.sveaOrderCreationDate = value;
+    }
+
+    /**
+     * Gets the value of the sveaOrderId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
+     */
+    public Long getSveaOrderId() {
+        return sveaOrderId;
+    }
+
+    /**
+     * Sets the value of the sveaOrderId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
+     */
+    public void setSveaOrderId(Long value) {
+        this.sveaOrderId = value;
     }
 
 }
