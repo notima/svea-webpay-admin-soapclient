@@ -4,7 +4,7 @@
  Last used version 3.2.0
  
  wsdl2java.bat -frontend jaxws21 
--p se.sveaekonomi.partnerweb
+-p org.notima.api.sveawebpay.adminservice.soap
 -d src\main\java
 -b src\main\resources\bindings.xml -autoNameResolution 
 -client https://webpayadminservice.svea.com/AdminService.svc?wsdl
