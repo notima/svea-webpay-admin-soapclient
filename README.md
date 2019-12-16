@@ -1,3 +1,7 @@
+# Deprecated
+Use this code module instead
+https://github.com/sveawebpay/webpayadminservice-client
+
 # svea-webpay-admin-soapclient
 Low level client for accessing SveaWebPay Administration Service API (Admin Service)
 
