@@ -1,38 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema elementFormDefault="qualified"
-	targetNamespace="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.Invoice"
+	targetNamespace="http://schemas.datacontract.org/2004/07/DataObjects.Webservice.DeliverOrder"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns:tns="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.Invoice">
+	xmlns:tns="http://schemas.datacontract.org/2004/07/DataObjects.Webservice.DeliverOrder">
 	<xs:import
 		schemaLocation="AdminService.xsd1.xsd"
 		namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-	<xs:simpleType name="TextMatchType">
+	<xs:simpleType name="InvoiceDistributionType">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="AllFields">
-				<xs:annotation>
-					<xs:appinfo>
-						<EnumerationValue
-							xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="SveaOrderId">
-				<xs:annotation>
-					<xs:appinfo>
-						<EnumerationValue
-							xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="ClientOrderNumber">
-				<xs:annotation>
-					<xs:appinfo>
-						<EnumerationValue
-							xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="NationalIdNumber">
+			<xs:enumeration value="NotDefined" />
+			<xs:enumeration value="Post" />
+			<xs:enumeration value="Email" />
+			<xs:enumeration value="EInvoiceB2B">
 				<xs:annotation>
 					<xs:appinfo>
 						<EnumerationValue
@@ -40,16 +19,16 @@
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
-			<xs:enumeration value="ClientInvoiceId">
+			<xs:enumeration value="Peppol">
 				<xs:annotation>
 					<xs:appinfo>
 						<EnumerationValue
-							xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+							xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:element name="TextMatchType" nillable="true"
-		type="tns:TextMatchType" />
+	<xs:element name="InvoiceDistributionType" nillable="true"
+		type="tns:InvoiceDistributionType" />
 </xs:schema>

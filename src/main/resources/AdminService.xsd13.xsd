@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema elementFormDefault="qualified"
-	targetNamespace="http://schemas.datacontract.org/2004/07/DataObjects.Enums"
-	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/DataObjects.Enums">
+	targetNamespace="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.PaymentPlan"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.PaymentPlan">
 	<xs:import
 		schemaLocation="AdminService.xsd1.xsd"
 		namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-	<xs:simpleType name="AddressSource">
+	<xs:simpleType name="TextMatchType">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="External">
+			<xs:enumeration value="AllFields">
 				<xs:annotation>
 					<xs:appinfo>
 						<EnumerationValue
@@ -15,7 +16,7 @@
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
-			<xs:enumeration value="EndCustomerProvided">
+			<xs:enumeration value="SveaOrderId">
 				<xs:annotation>
 					<xs:appinfo>
 						<EnumerationValue
@@ -23,7 +24,7 @@
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
-			<xs:enumeration value="Internal">
+			<xs:enumeration value="ClientOrderNumber">
 				<xs:annotation>
 					<xs:appinfo>
 						<EnumerationValue
@@ -31,7 +32,7 @@
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
-			<xs:enumeration value="Migrated">
+			<xs:enumeration value="NationalIdNumber">
 				<xs:annotation>
 					<xs:appinfo>
 						<EnumerationValue
@@ -39,7 +40,7 @@
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
-			<xs:enumeration value="BankIdSigned">
+			<xs:enumeration value="ContractNumber">
 				<xs:annotation>
 					<xs:appinfo>
 						<EnumerationValue
@@ -49,6 +50,6 @@
 			</xs:enumeration>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:element name="AddressSource" nillable="true"
-		type="tns:AddressSource" />
+	<xs:element name="TextMatchType" nillable="true"
+		type="tns:TextMatchType" />
 </xs:schema>

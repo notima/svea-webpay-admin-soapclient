@@ -24,6 +24,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *         &lt;element name="ClientOrderNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="Date" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
  *         &lt;element name="Fee" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="SveaIsPaymentFacilitator" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="TransactionId" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
@@ -39,6 +40,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "clientOrderNumber",
     "date",
     "fee",
+    "sveaIsPaymentFacilitator",
     "transactionId"
 })
 public class SpecificationRow {
@@ -52,6 +54,8 @@ public class SpecificationRow {
     protected XMLGregorianCalendar date;
     @XmlElement(name = "Fee")
     protected BigDecimal fee;
+    @XmlElement(name = "SveaIsPaymentFacilitator")
+    protected Boolean sveaIsPaymentFacilitator;
     @XmlElement(name = "TransactionId")
     protected Long transactionId;
 
@@ -149,6 +153,30 @@ public class SpecificationRow {
      */
     public void setFee(BigDecimal value) {
         this.fee = value;
+    }
+
+    /**
+     * Gets the value of the sveaIsPaymentFacilitator property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
+     */
+    public Boolean isSveaIsPaymentFacilitator() {
+        return sveaIsPaymentFacilitator;
+    }
+
+    /**
+     * Sets the value of the sveaIsPaymentFacilitator property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
+     */
+    public void setSveaIsPaymentFacilitator(Boolean value) {
+        this.sveaIsPaymentFacilitator = value;
     }
 
     /**

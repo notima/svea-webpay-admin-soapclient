@@ -18,13 +18,14 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="SveaOrderId"/&gt;
  *     &lt;enumeration value="ClientOrderNumber"/&gt;
  *     &lt;enumeration value="NationalIdNumber"/&gt;
- *     &lt;enumeration value="ClientInvoiceId"/&gt;
+ *     &lt;enumeration value="ContractNumber"/&gt;
+ *     &lt;enumeration value="AccountCreditId"/&gt;
  *   &lt;/restriction&gt;
  * &lt;/simpleType&gt;
  * </pre>
  * 
  */
-@XmlType(name = "TextMatchType", namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.Invoice")
+@XmlType(name = "TextMatchType", namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Search.AccountCredit")
 @XmlEnum
 public enum TextMatchType {
 
@@ -36,8 +37,10 @@ public enum TextMatchType {
     CLIENT_ORDER_NUMBER("ClientOrderNumber"),
     @XmlEnumValue("NationalIdNumber")
     NATIONAL_ID_NUMBER("NationalIdNumber"),
-    @XmlEnumValue("ClientInvoiceId")
-    CLIENT_INVOICE_ID("ClientInvoiceId");
+    @XmlEnumValue("ContractNumber")
+    CONTRACT_NUMBER("ContractNumber"),
+    @XmlEnumValue("AccountCreditId")
+    ACCOUNT_CREDIT_ID("AccountCreditId");
     private final String value;
 
     TextMatchType(String v) {

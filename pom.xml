@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.notima</groupId>
 	<artifactId>webpay-admin-client</artifactId>
-	<version>1.6.181119</version>
+	<version>1.6.210928</version>
 	<name>Svea Webpay Admin Client</name>
 
 	<properties>

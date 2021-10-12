@@ -3,7 +3,7 @@ Low level client for accessing SveaWebPay Administration Service API.
 
 Generated with wsdl2java - Apache CXF 3.2.0
 
-wsdl2java.sh -frontend jaxws21 -p se.sveaekonomi.partnerweb -d src/main/java -b src/main/resources/bindings.xml -autoNameResolution -client src/main/resources/AdminService.svc.wsdl
+wsdl2java.sh -frontend jaxws21 -p org.notima.sveawebpayadmin -d src/main/java -b src/main/resources/bindings.xml -autoNameResolution -client src/main/resources/AdminService-190401.wsdl
 
 See also src/main/resources/bindings.xml for additional comments.
 

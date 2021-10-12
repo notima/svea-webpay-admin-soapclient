@@ -63,7 +63,7 @@ public class InvoiceReportRow {
     protected BigDecimal administrationFee;
     @XmlElement(name = "Amount", required = true)
     protected BigDecimal amount;
-    @XmlElement(name = "CheckoutOrderId")
+    @XmlElement(name = "CheckoutOrderId", nillable = true)
     protected Long checkoutOrderId;
     @XmlElement(name = "ClientId")
     protected long clientId;
@@ -82,10 +82,10 @@ public class InvoiceReportRow {
     @XmlElement(name = "ReportDate", required = true)
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar reportDate;
-    @XmlElement(name = "SveaOrderCreationDate")
+    @XmlElement(name = "SveaOrderCreationDate", nillable = true)
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar sveaOrderCreationDate;
-    @XmlElement(name = "SveaOrderId")
+    @XmlElement(name = "SveaOrderId", nillable = true)
     protected Long sveaOrderId;
 
     /**

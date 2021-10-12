@@ -58,7 +58,7 @@ public class SearchInvoiceFilter {
     protected String textMatch;
     @XmlElement(name = "TextMatchType", nillable = true)
     @XmlSchemaType(name = "string")
-    protected TextMatchType textMatchType;
+    protected TextMatchType4 textMatchType;
 
     /**
      * Gets the value of the acceptedPaymentStatus property.
@@ -185,10 +185,10 @@ public class SearchInvoiceFilter {
      * 
      * @return
      *     possible object is
-     *     {@link TextMatchType }
+     *     {@link TextMatchType4 }
      *     
      */
-    public TextMatchType getTextMatchType() {
+    public TextMatchType4 getTextMatchType() {
         return textMatchType;
     }
 
@@ -197,10 +197,10 @@ public class SearchInvoiceFilter {
      * 
      * @param value
      *     allowed object is
-     *     {@link TextMatchType }
+     *     {@link TextMatchType4 }
      *     
      */
-    public void setTextMatchType(TextMatchType value) {
+    public void setTextMatchType(TextMatchType4 value) {
         this.textMatchType = value;
     }
 

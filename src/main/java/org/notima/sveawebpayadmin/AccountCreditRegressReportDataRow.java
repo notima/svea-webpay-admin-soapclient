@@ -75,7 +75,7 @@ public class AccountCreditRegressReportDataRow {
     protected Integer administratorId;
     @XmlElement(name = "Amount")
     protected BigDecimal amount;
-    @XmlElement(name = "CheckoutOrderId")
+    @XmlElement(name = "CheckoutOrderId", nillable = true)
     protected Long checkoutOrderId;
     @XmlElement(name = "ClientId")
     protected Long clientId;
@@ -100,7 +100,7 @@ public class AccountCreditRegressReportDataRow {
     @XmlElement(name = "SveaOrderCreationDate", nillable = true)
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar sveaOrderCreationDate;
-    @XmlElement(name = "SveaOrderId")
+    @XmlElement(name = "SveaOrderId", nillable = true)
     protected Long sveaOrderId;
     @XmlElement(name = "TransactionDate")
     @XmlSchemaType(name = "dateTime")

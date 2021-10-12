@@ -18,6 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="Post"/&gt;
  *     &lt;enumeration value="Email"/&gt;
  *     &lt;enumeration value="EInvoiceB2B"/&gt;
+ *     &lt;enumeration value="Peppol"/&gt;
  *   &lt;/restriction&gt;
  * &lt;/simpleType&gt;
  * </pre>
@@ -34,7 +35,9 @@ public enum InvoiceDistributionType {
     @XmlEnumValue("Email")
     EMAIL("Email"),
     @XmlEnumValue("EInvoiceB2B")
-    E_INVOICE_B_2_B("EInvoiceB2B");
+    E_INVOICE_B_2_B("EInvoiceB2B"),
+    @XmlEnumValue("Peppol")
+    PEPPOL("Peppol");
     private final String value;
 
     InvoiceDistributionType(String v) {

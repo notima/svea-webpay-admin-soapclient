@@ -71,7 +71,7 @@ public class RegressionReportRow {
 
     @XmlElement(name = "Capital")
     protected BigDecimal capital;
-    @XmlElement(name = "CheckoutOrderId")
+    @XmlElement(name = "CheckoutOrderId", nillable = true)
     protected Long checkoutOrderId;
     @XmlElement(name = "ClientId")
     protected int clientId;
@@ -98,11 +98,11 @@ public class RegressionReportRow {
     protected XMLGregorianCalendar reportingDate;
     @XmlElement(name = "RowNumber")
     protected int rowNumber;
-    @XmlElement(name = "SveaOrderCreationDate", required = true)
+    @XmlElement(name = "SveaOrderCreationDate", required = true, nillable = true)
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar sveaOrderCreationDate;
-    @XmlElement(name = "SveaOrderId")
-    protected long sveaOrderId;
+    @XmlElement(name = "SveaOrderId", required = true, type = Long.class, nillable = true)
+    protected Long sveaOrderId;
     @XmlElement(name = "TransactionAmount", required = true)
     protected BigDecimal transactionAmount;
     @XmlElement(name = "TransactionType")
@@ -417,16 +417,24 @@ public class RegressionReportRow {
     /**
      * Gets the value of the sveaOrderId property.
      * 
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
      */
-    public long getSveaOrderId() {
+    public Long getSveaOrderId() {
         return sveaOrderId;
     }
 
     /**
      * Sets the value of the sveaOrderId property.
      * 
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
      */
-    public void setSveaOrderId(long value) {
+    public void setSveaOrderId(Long value) {
         this.sveaOrderId = value;
     }
 

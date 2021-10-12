@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
@@ -27,6 +28,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="NumberOfUnits" type="{http://www.w3.org/2001/XMLSchema}decimal"/&gt;
  *         &lt;element name="PriceIncludingVat" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="PricePerUnit" type="{http://www.w3.org/2001/XMLSchema}decimal"/&gt;
+ *         &lt;element name="RowType" type="{http://schemas.datacontract.org/2004/07/DataObjects.Enums}RowType" minOccurs="0"/&gt;
  *         &lt;element name="TemporaryReference" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="Unit" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="VatPercent" type="{http://www.w3.org/2001/XMLSchema}decimal"/&gt;
@@ -48,6 +50,7 @@ import javax.xml.bind.annotation.XmlType;
     "numberOfUnits",
     "priceIncludingVat",
     "pricePerUnit",
+    "rowType",
     "temporaryReference",
     "unit",
     "vatPercent"
@@ -73,6 +76,9 @@ public class OrderRow {
     protected Boolean priceIncludingVat;
     @XmlElement(name = "PricePerUnit", required = true)
     protected BigDecimal pricePerUnit;
+    @XmlElement(name = "RowType", nillable = true)
+    @XmlSchemaType(name = "string")
+    protected RowType rowType;
     @XmlElement(name = "TemporaryReference", nillable = true)
     protected String temporaryReference;
     @XmlElement(name = "Unit", nillable = true)
@@ -270,6 +276,30 @@ public class OrderRow {
      */
     public void setPricePerUnit(BigDecimal value) {
         this.pricePerUnit = value;
+    }
+
+    /**
+     * Gets the value of the rowType property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link RowType }
+     *     
+     */
+    public RowType getRowType() {
+        return rowType;
+    }
+
+    /**
+     * Sets the value of the rowType property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link RowType }
+     *     
+     */
+    public void setRowType(RowType value) {
+        this.rowType = value;
     }
 
     /**

@@ -1,80 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema elementFormDefault="qualified"
-	targetNamespace="http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder"
+	targetNamespace="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns:tns="http://schemas.datacontract.org/2004/07/DataObjects.Webservice.CreateOrder">
+	xmlns:tns="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Account">
 	<xs:import
-		schemaLocation="AdminService.xsd3.xsd"
-		namespace="http://schemas.datacontract.org/2004/07/DataObjects.Webservice" />
+		schemaLocation="AdminService.xsd2.xsd"
+		namespace="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service" />
 	<xs:import
-		schemaLocation="AdminService.xsd5.xsd"
-		namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-	<xs:complexType name="CreateOrderInformation">
+		schemaLocation="AdminService.xsd1.xsd"
+		namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+	<xs:complexType name="AccountCreditDetails">
 		<xs:sequence>
-			<xs:element minOccurs="0" name="AddressSelector" nillable="true"
-				type="xs:string" />
-			<xs:element minOccurs="0" name="ClientOrderNumber"
-				nillable="true" type="xs:string" />
-			<xs:element minOccurs="0" name="CreateAccountCreditDetails"
-				nillable="true" type="tns:CreateAccountCreditDetails" />
-			<xs:element minOccurs="0" name="CreatePaymentPlanDetails"
-				nillable="true" type="tns:CreatePaymentPlanDetails" />
-			<xs:element name="CustomerIdentity" nillable="true"
-				type="q1:CustomerIdentity"
-				xmlns:q1="http://schemas.datacontract.org/2004/07/DataObjects.Webservice" />
-			<xs:element minOccurs="0" name="CustomerReference"
-				nillable="true" type="xs:string" />
-			<xs:element name="OrderDate" type="xs:dateTime" />
-			<xs:element minOccurs="0" name="OrderDeliveryAddress"
-				nillable="true" type="q2:Address"
-				xmlns:q2="http://schemas.datacontract.org/2004/07/DataObjects.Webservice" />
-			<xs:element name="OrderRows" nillable="true" type="q3:ArrayOfOrderRow"
-				xmlns:q3="http://schemas.datacontract.org/2004/07/DataObjects.Webservice" />
-			<xs:element name="OrderType" type="q4:OrderType"
-				xmlns:q4="http://schemas.datacontract.org/2004/07/DataObjects.Webservice" />
+			<xs:element minOccurs="0" name="CampaignCode"
+				type="xs:decimal" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:element name="CreateOrderInformation" nillable="true"
-		type="tns:CreateOrderInformation" />
-	<xs:complexType name="CreateAccountCreditDetails">
+	<xs:element name="AccountCreditDetails" nillable="true"
+		type="tns:AccountCreditDetails" />
+	<xs:complexType name="SearchAccountCreditSorting">
 		<xs:sequence>
-			<xs:element minOccurs="0" name="CampaignCode" nillable="true"
-				type="xs:long" />
+			<xs:element minOccurs="0" name="SortAccountCreditProperty"
+				type="tns:SortAccountCreditProperty" />
+			<xs:element minOccurs="0" name="SortDirection"
+				type="q1:SortDirection"
+				xmlns:q1="http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:element name="CreateAccountCreditDetails" nillable="true"
-		type="tns:CreateAccountCreditDetails" />
-	<xs:complexType name="CreatePaymentPlanDetails">
+	<xs:element name="SearchAccountCreditSorting"
+		nillable="true" type="tns:SearchAccountCreditSorting" />
+	<xs:simpleType name="SortAccountCreditProperty">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Amount">
+				<xs:annotation>
+					<xs:appinfo>
+						<EnumerationValue
+							xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CreationDate">
+				<xs:annotation>
+					<xs:appinfo>
+						<EnumerationValue
+							xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ContractNumber">
+				<xs:annotation>
+					<xs:appinfo>
+						<EnumerationValue
+							xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ClientId">
+				<xs:annotation>
+					<xs:appinfo>
+						<EnumerationValue
+							xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OrderId">
+				<xs:annotation>
+					<xs:appinfo>
+						<EnumerationValue
+							xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ClientAccountCreditId">
+				<xs:annotation>
+					<xs:appinfo>
+						<EnumerationValue
+							xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="SortAccountCreditProperty" nillable="true"
+		type="tns:SortAccountCreditProperty" />
+	<xs:complexType
+		name="ArrayOfGetAccountCreditInformation">
 		<xs:sequence>
-			<xs:element minOccurs="0" name="CampaignCode" nillable="true"
-				type="xs:long" />
-			<xs:element minOccurs="0" name="CoCustomerIdentity"
-				nillable="true" type="q5:CustomerIdentity"
-				xmlns:q5="http://schemas.datacontract.org/2004/07/DataObjects.Webservice" />
-			<xs:element minOccurs="0" name="FixedMonthlyAmount"
-				nillable="true" type="xs:decimal" />
-			<xs:element minOccurs="0" name="SendAutomaticGiroPaymentForm"
-				type="xs:boolean" />
+			<xs:element minOccurs="0" maxOccurs="unbounded"
+				name="GetAccountCreditInformation" nillable="true"
+				type="tns:GetAccountCreditInformation" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:element name="CreatePaymentPlanDetails" nillable="true"
-		type="tns:CreatePaymentPlanDetails" />
-	<xs:complexType name="CreateOrderResult">
+	<xs:element name="ArrayOfGetAccountCreditInformation"
+		nillable="true" type="tns:ArrayOfGetAccountCreditInformation" />
+	<xs:complexType name="GetAccountCreditInformation">
 		<xs:sequence>
-			<xs:element minOccurs="0" name="Amount" type="xs:decimal" />
-			<xs:element minOccurs="0" name="CustomerIdentity"
-				nillable="true" type="q6:CustomerIdentity"
-				xmlns:q6="http://schemas.datacontract.org/2004/07/DataObjects.Webservice" />
-			<xs:element minOccurs="0" name="ExpirationDate" nillable="true"
-				type="xs:dateTime" />
-			<xs:element minOccurs="0" name="OrderType" nillable="true"
-				type="xs:string" />
-			<xs:element minOccurs="0" name="PendingReasons" nillable="true"
-				type="q7:ArrayOfstring" xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-			<xs:element minOccurs="0" name="SveaOrderId" type="xs:long" />
-			<xs:element minOccurs="0" name="SveaWillBuyOrder" type="xs:boolean" />
+			<xs:element name="ClientAccountCreditId" type="xs:long" />
+			<xs:element name="ClientId" type="xs:long" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:element name="CreateOrderResult" nillable="true"
-		type="tns:CreateOrderResult" />
+	<xs:element name="GetAccountCreditInformation"
+		nillable="true" type="tns:GetAccountCreditInformation" />
 </xs:schema>
