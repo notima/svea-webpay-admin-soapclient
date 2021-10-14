@@ -4,23 +4,23 @@ package org.notima.sveawebpayadmin;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for SearchAccountCreditsResponse complex type.
+ * <p>Java class for anonymous complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SearchAccountCreditsResponse"&gt;
+ * &lt;complexType&gt;
  *   &lt;complexContent&gt;
- *     &lt;extension base="{http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service}BasicResponse"&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="AccountCreditListItems" type="{http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service}ArrayOfAccountCreditListItem"/&gt;
- *         &lt;element name="ResultCount" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="SearchAccountCreditsResult" type="{http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses}SearchAccountCreditsResponse" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
- *     &lt;/extension&gt;
+ *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
@@ -28,57 +28,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SearchAccountCreditsResponse", namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", propOrder = {
-    "accountCreditListItems",
-    "resultCount"
+@XmlType(name = "", propOrder = {
+    "searchAccountCreditsResult"
 })
-public class SearchAccountCreditsResponse
-    extends BasicResponse
-{
+@XmlRootElement(name = "SearchAccountCreditsResponse", namespace = "http://tempuri.org/")
+public class SearchAccountCreditsResponse {
 
-    @XmlElement(name = "AccountCreditListItems", required = true, nillable = true)
-    protected ArrayOfAccountCreditListItem accountCreditListItems;
-    @XmlElement(name = "ResultCount")
-    protected int resultCount;
+    @XmlElement(name = "SearchAccountCreditsResult", namespace = "http://tempuri.org/", nillable = true)
+    protected SearchAccountCreditsResponse2 searchAccountCreditsResult;
 
     /**
-     * Gets the value of the accountCreditListItems property.
+     * Gets the value of the searchAccountCreditsResult property.
      * 
      * @return
      *     possible object is
-     *     {@link ArrayOfAccountCreditListItem }
+     *     {@link SearchAccountCreditsResponse2 }
      *     
      */
-    public ArrayOfAccountCreditListItem getAccountCreditListItems() {
-        return accountCreditListItems;
+    public SearchAccountCreditsResponse2 getSearchAccountCreditsResult() {
+        return searchAccountCreditsResult;
     }
 
     /**
-     * Sets the value of the accountCreditListItems property.
+     * Sets the value of the searchAccountCreditsResult property.
      * 
      * @param value
      *     allowed object is
-     *     {@link ArrayOfAccountCreditListItem }
+     *     {@link SearchAccountCreditsResponse2 }
      *     
      */
-    public void setAccountCreditListItems(ArrayOfAccountCreditListItem value) {
-        this.accountCreditListItems = value;
-    }
-
-    /**
-     * Gets the value of the resultCount property.
-     * 
-     */
-    public int getResultCount() {
-        return resultCount;
-    }
-
-    /**
-     * Sets the value of the resultCount property.
-     * 
-     */
-    public void setResultCount(int value) {
-        this.resultCount = value;
+    public void setSearchAccountCreditsResult(SearchAccountCreditsResponse2 value) {
+        this.searchAccountCreditsResult = value;
     }
 
 }

@@ -4,23 +4,22 @@ package org.notima.sveawebpayadmin;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for anonymous complex type.
+ * <p>Java class for GetKickbackReportResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType&gt;
+ * &lt;complexType name="GetKickbackReportResponse"&gt;
  *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *     &lt;extension base="{http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service}BasicResponse"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="GetKickbackReportResult" type="{http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses}GetKickbackReportResponse" minOccurs="0"/&gt;
+ *         &lt;element name="Kickbacks" type="{http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service}ArrayOfKickbackReportRow" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
+ *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
@@ -28,37 +27,38 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "getKickbackReportResult"
+@XmlType(name = "GetKickbackReportResponse", namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", propOrder = {
+    "kickbacks"
 })
-@XmlRootElement(name = "GetKickbackReportResponse", namespace = "http://tempuri.org/")
-public class GetKickbackReportResponse2 {
+public class GetKickbackReportResponse2
+    extends BasicResponse
+{
 
-    @XmlElement(name = "GetKickbackReportResult", namespace = "http://tempuri.org/", nillable = true)
-    protected GetKickbackReportResponse getKickbackReportResult;
+    @XmlElement(name = "Kickbacks", nillable = true)
+    protected ArrayOfKickbackReportRow kickbacks;
 
     /**
-     * Gets the value of the getKickbackReportResult property.
+     * Gets the value of the kickbacks property.
      * 
      * @return
      *     possible object is
-     *     {@link GetKickbackReportResponse }
+     *     {@link ArrayOfKickbackReportRow }
      *     
      */
-    public GetKickbackReportResponse getGetKickbackReportResult() {
-        return getKickbackReportResult;
+    public ArrayOfKickbackReportRow getKickbacks() {
+        return kickbacks;
     }
 
     /**
-     * Sets the value of the getKickbackReportResult property.
+     * Sets the value of the kickbacks property.
      * 
      * @param value
      *     allowed object is
-     *     {@link GetKickbackReportResponse }
+     *     {@link ArrayOfKickbackReportRow }
      *     
      */
-    public void setGetKickbackReportResult(GetKickbackReportResponse value) {
-        this.getKickbackReportResult = value;
+    public void setKickbacks(ArrayOfKickbackReportRow value) {
+        this.kickbacks = value;
     }
 
 }

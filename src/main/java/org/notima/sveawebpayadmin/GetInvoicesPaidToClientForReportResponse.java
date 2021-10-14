@@ -4,22 +4,23 @@ package org.notima.sveawebpayadmin;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for GetInvoicesPaidToClientForReportResponse complex type.
+ * <p>Java class for anonymous complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="GetInvoicesPaidToClientForReportResponse"&gt;
+ * &lt;complexType&gt;
  *   &lt;complexContent&gt;
- *     &lt;extension base="{http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service}BasicResponse"&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="Invoices" type="{http://schemas.datacontract.org/2004/07/DataObjects.Internal.Service.Types}ArrayOfInvoicePaidToClientRow" minOccurs="0"/&gt;
+ *         &lt;element name="GetInvoicesPaidToClientForReportResult" type="{http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses}GetInvoicesPaidToClientForReportResponse" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
- *     &lt;/extension&gt;
+ *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
@@ -27,38 +28,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "GetInvoicesPaidToClientForReportResponse", namespace = "http://schemas.datacontract.org/2004/07/DataObjects.Admin.Service.Responses", propOrder = {
-    "invoices"
+@XmlType(name = "", propOrder = {
+    "getInvoicesPaidToClientForReportResult"
 })
-public class GetInvoicesPaidToClientForReportResponse
-    extends BasicResponse
-{
+@XmlRootElement(name = "GetInvoicesPaidToClientForReportResponse", namespace = "http://tempuri.org/")
+public class GetInvoicesPaidToClientForReportResponse {
 
-    @XmlElement(name = "Invoices", nillable = true)
-    protected ArrayOfInvoicePaidToClientRow invoices;
+    @XmlElement(name = "GetInvoicesPaidToClientForReportResult", namespace = "http://tempuri.org/", nillable = true)
+    protected GetInvoicesPaidToClientForReportResponse2 getInvoicesPaidToClientForReportResult;
 
     /**
-     * Gets the value of the invoices property.
+     * Gets the value of the getInvoicesPaidToClientForReportResult property.
      * 
      * @return
      *     possible object is
-     *     {@link ArrayOfInvoicePaidToClientRow }
+     *     {@link GetInvoicesPaidToClientForReportResponse2 }
      *     
      */
-    public ArrayOfInvoicePaidToClientRow getInvoices() {
-        return invoices;
+    public GetInvoicesPaidToClientForReportResponse2 getGetInvoicesPaidToClientForReportResult() {
+        return getInvoicesPaidToClientForReportResult;
     }
 
     /**
-     * Sets the value of the invoices property.
+     * Sets the value of the getInvoicesPaidToClientForReportResult property.
      * 
      * @param value
      *     allowed object is
-     *     {@link ArrayOfInvoicePaidToClientRow }
+     *     {@link GetInvoicesPaidToClientForReportResponse2 }
      *     
      */
-    public void setInvoices(ArrayOfInvoicePaidToClientRow value) {
-        this.invoices = value;
+    public void setGetInvoicesPaidToClientForReportResult(GetInvoicesPaidToClientForReportResponse2 value) {
+        this.getInvoicesPaidToClientForReportResult = value;
     }
 
 }
